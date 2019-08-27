@@ -1,0 +1,8 @@
+.target-transistionable {
+    a {
+        transition: all 1s ease;
+    }
+    a:target {
+        color: red;
+    }
+}

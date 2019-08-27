@@ -1,0 +1,40 @@
+.hover-underline-menu {
+  width: 100%;
+}
+.hover-underline-menu .menu {
+  background-color: #2C3840;
+}
+.hover-underline-menu .menu a {
+  color: #FFFFFF;
+  padding: 1.2rem 1.5rem;
+}
+.hover-underline-menu .menu .underline-from-center {
+  position: relative;
+}
+.hover-underline-menu .menu .underline-from-center::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 0.125rem);
+  border-bottom: 0.125rem solid #FFFFFF;
+  left: 50%;
+  right: 50%;
+  transition: all 0.5s ease;
+}
+.hover-underline-menu .menu .underline-from-center:hover::after {
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+.callout {
+  background-color: black;
+}
+
+.target-transistionable a {
+  transition: all 1s ease;
+}
+.target-transistionable a:target {
+  color: red;
+}
+
+/*# sourceMappingURL=output.css.map */
