@@ -21,6 +21,9 @@ var section1 = $("#section1"),
     section3Btn = document.getElementById("section3Btn"),
     section4Btn = document.getElementById("section4Btn");
 
+section0Btn.onclick = function () {
+    TweenMax.to(window, 1.5, { scrollTo: section1Top, ease: Expo.easeOut });
+}
 section1Btn.onclick = function () {
     TweenMax.to(window, 1.5, { scrollTo: section1Top, ease: Expo.easeOut });
 }
