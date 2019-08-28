@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("[data-menu-underline-from-center] a").addClass("underline-from-center");
 });
 
-var scrollToExtraTopOffset = 60;
+var scrollToExtraTopOffset = 130;
 
 var section1 = $("#section1"),
     section1Top = section1.offset().top - scrollToExtraTopOffset,
