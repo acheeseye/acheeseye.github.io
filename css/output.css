@@ -40,6 +40,9 @@
   transform: translate(-50%);
   border-radius: 25%;
 }
+.round-button i {
+  position: relative;
+}
 
 .hover-underline-menu {
   width: 100%;
