@@ -1,6 +1,19 @@
-.header .img {
-  width: 100%;
-  height: 10px;
+.header img {
+  min-width: 100%;
+  height: 95vh;
+}
+
+.section-odd {
+  background-color: beige;
+}
+
+.section-even {
+  background-color: #ffecd6;
+}
+
+.spacer1 {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .hover-underline-menu {
@@ -14,6 +27,7 @@
   padding: 1.2rem 1.5rem;
 }
 .hover-underline-menu .menu .underline-from-center {
+  height: 5vh;
   position: relative;
 }
 .hover-underline-menu .menu .underline-from-center::after {
@@ -29,10 +43,6 @@
   left: 0;
   right: 0;
   transition: all 0.5s ease;
-}
-
-.callout {
-  background-color: black;
 }
 
 .target-transistionable a {
