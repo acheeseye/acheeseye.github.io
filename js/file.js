@@ -3,8 +3,9 @@ $(document).ready(function () {
 });
 
 // animated scroll to
-
-var scrollToExtraTopOffset = 130;
+var half_spacer = 40,
+    scrollToDuration = 2.5;
+var scrollToExtraTopOffset = half_spacer;
 var section1 = $("#section1"),
     section1Top = section1.offset().top - scrollToExtraTopOffset,
     section2 = $("#section2"),
@@ -20,20 +21,20 @@ var section1 = $("#section1"),
     section4Btn = document.getElementById("section4Btn");
 
 section0Btn.onclick = function () {
-    TweenMax.to(window, 1.5, { scrollTo: section1Top, ease: Expo.easeOut });
-    TweenMax.from(".menu", 1.5, { opacity: 0, ease: Power2.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
+    TweenMax.from(".menu", 2.5, { opacity: 0, ease: Power2.easeOut });
 }
 section1Btn.onclick = function () {
-    TweenMax.to(window, 1.5, { scrollTo: section1Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
 }
 section2Btn.onclick = function () {
-    TweenMax.to(window, 1.5, { scrollTo: section2Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section2Top, ease: Expo.easeOut });
 }
 section3Btn.onclick = function () {
-    TweenMax.to(window, 1.5, { scrollTo: section3Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section3Top, ease: Expo.easeOut });
 }
 section4Btn.onclick = function () {
-    TweenMax.to(window, 1.5, { scrollTo: section4Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section4Top, ease: Expo.easeOut });
 }
 
 // sticky navbar
@@ -51,8 +52,30 @@ function stickyFunction() {
     }
 }
 
+var vh_value = document.documentElement.clientHeight;
+
 // sine wave get started text
 var roundButton = document.getElementById("#fi-arrow-down");
 
 TweenMax.to(".fi-arrow-down", 1.5, { ease: Sine.easeInOut, top: 10, repeat: -1 });
+var testTween = TweenMax.to(".logo", { left: 300 });
+
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+    offset: vh_value + half_spacer * 3 + vh_value / 4, // starting px
+    triggerElement: "#trigger2",
+    duration: vh_value / 4 // offset + duration = ending px
+})
+    .setTween(".curtain", { y: -855 })
+    .addIndicators({ name: "2 (duration: 600)" })
+    .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+    offset: vh_value + half_spacer * 3 + vh_value / 8 * 3, // starting px
+    triggerElement: "#trigger2",
+    duration: vh_value / 8 // offset + duration = ending px
+})
+    .setTween(".imgmeshadow", { x: 25 })
+    .addIndicators({ name: "2 (duration: 600)" })
+    .addTo(controller);
 

@@ -1,4 +1,5 @@
 @import '_variables.scss';
+@import '_functions.scss';
 
 .header {
     img {
@@ -20,11 +21,11 @@
 }
 
 .section-odd {
-    background-color: $section-color-even;
+    background-color: $section-color-odd;
 }
 
 .section-even {
-    background-color: $section-color-odd;
+    background-color: $section-color-even;
 }
 
 .spacer1 {
@@ -33,6 +34,7 @@
 }
 
 .round-button {
+    opacity: 0.5;
     background-image: $get-started-button-color;
     border:none;
     color:white;
@@ -44,7 +46,37 @@
     margin-left:50%;
     transform: translate(-50%);
     border-radius: 25%;
+    transition: opacity 0.25s ease;
+    &:hover {
+        opacity: 1;
+    }
     i {
         position: relative;
     }
+}
+
+.logo {
+    position: absolute;
+}
+
+.curtain {
+    z-index: 2;
+    position: absolute;
+    background-color: beige;
+    // background-image: linear-gradient(to top, beige, white);
+    min-width: 570px;
+    min-height: 855px;
+}
+
+.imgme {
+    z-index: 1;
+    position: relative;
+    // background-color: rgba(50,0,0,0.3);
+    background-image: linear-gradient(to top, shade(rgba(50,0,0,1), 50), rgba(50,0,0,0.5));
+}
+
+.imgmeshadow {
+    z-index: 0;
+    position: relative;
+    margin-top: -882px;
 }

@@ -28,7 +28,8 @@
 }
 
 .round-button {
-  background-image: linear-gradient(to bottom right, red, orange);
+  opacity: 0.5;
+  background-image: linear-gradient(to bottom right, blue, purple);
   border: none;
   color: white;
   padding: 15px 20px 12px 20px;
@@ -39,9 +40,37 @@
   margin-left: 50%;
   transform: translate(-50%);
   border-radius: 25%;
+  transition: opacity 0.25s ease;
+}
+.round-button:hover {
+  opacity: 1;
 }
 .round-button i {
   position: relative;
+}
+
+.logo {
+  position: absolute;
+}
+
+.curtain {
+  z-index: 2;
+  position: absolute;
+  background-color: beige;
+  min-width: 570px;
+  min-height: 855px;
+}
+
+.imgme {
+  z-index: 1;
+  position: relative;
+  background-image: linear-gradient(to top, #190000, rgba(50, 0, 0, 0.5));
+}
+
+.imgmeshadow {
+  z-index: 0;
+  position: relative;
+  margin-top: -882px;
 }
 
 .hover-underline-menu {
