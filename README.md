@@ -13,3 +13,5 @@ https://greensock.com/ease-visualizer/
 https://scrollmagic.io/examples/advanced/anchor_link_scrolling.html
 
 https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+
+https://www.scrapehero.com/a-beginners-guide-to-web-scraping-part-1-the-basics/
