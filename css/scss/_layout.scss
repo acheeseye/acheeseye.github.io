@@ -1,6 +1,21 @@
+@import '_variables.scss';
+
 .header {
-    .img {
-        width: 100%;
-        height: 10px;
+    img {
+        min-width: 100%;
+        height: 95vh;
     }
+}
+
+.section-odd {
+    background-color: $section-color-even;
+}
+
+.section-even {
+    background-color: $section-color-odd;
+}
+
+.spacer1 {
+    padding: 40px;
+    background-color: rgba(0,0,0,0);
 }
