@@ -3,29 +3,38 @@
 
 .header {
     img {
+        background-attachment: fixed;
         opacity: 0.7;
         min-width: 100%;
         height: 100vh;
     }
-    .centered {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+}
 
-        h1, h2 {
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    h1, h2 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
     }
 }
 
 .section-odd {
     background-color: $section-color-odd;
+    color: $lighter-gray;
 }
 
 .section-even {
     background-color: $section-color-even;
+    color: $white;
+}
+
+.spacer0 {
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
 }
 
 .spacer1 {
@@ -49,6 +58,7 @@
     transition: opacity 0.25s ease;
     &:hover {
         opacity: 1;
+        content:"hello";
     }
     i {
         position: relative;
@@ -62,7 +72,7 @@
 .curtain {
     z-index: 2;
     position: absolute;
-    background-color: beige;
+    background-color: $section-color-odd;
     // background-image: linear-gradient(to top, beige, white);
     min-width: 570px;
     min-height: 855px;
@@ -71,12 +81,24 @@
 .imgme {
     z-index: 1;
     position: relative;
-    // background-color: rgba(50,0,0,0.3);
-    background-image: linear-gradient(to top, shade(rgba(50,0,0,1), 50), rgba(50,0,0,0.5));
+    background-color: rgba(0,0,0,0.3);
+    // background-image: linear-gradient(to top, shade(rgba(50,0,0,1), 50), rgba(50,0,0,0.5));
 }
 
 .imgmeshadow {
     z-index: 0;
     position: relative;
     margin-top: -882px;
+}
+
+.get-in-touch-button {
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    transition: opacity 0.25 ease;
+    &:hover {
+        opacity: 0.3;
+        background-color: transparent;
+    }
 }

@@ -57,25 +57,40 @@ var vh_value = document.documentElement.clientHeight;
 // sine wave get started text
 var roundButton = document.getElementById("#fi-arrow-down");
 
-TweenMax.to(".fi-arrow-down", 1.5, { ease: Sine.easeInOut, top: 10, repeat: -1 });
+// TweenMax.to(".fi-arrow-down", 1.5, { ease: Sine.easeInOut, opacity: 0.5, repeat: -1 });
 var testTween = TweenMax.to(".logo", { left: 300 });
 
 var controller = new ScrollMagic.Controller();
+
 var scene = new ScrollMagic.Scene({
     offset: vh_value + half_spacer * 3 + vh_value / 4, // starting px
     triggerElement: "#trigger2",
-    duration: vh_value / 4 // offset + duration = ending px
+    duration: vh_value / 4, // offset + duration = ending px
+    reverse: true,
 })
     .setTween(".curtain", { y: -855 })
-    .addIndicators({ name: "2 (duration: 600)" })
+    //.addIndicators({ name: "2 (duration: 600)" })
     .addTo(controller);
 
 var scene = new ScrollMagic.Scene({
     offset: vh_value + half_spacer * 3 + vh_value / 8 * 3, // starting px
     triggerElement: "#trigger2",
-    duration: vh_value / 8 // offset + duration = ending px
+    duration: vh_value / 8, // offset + duration = ending px
+    reverse: true,
 })
     .setTween(".imgmeshadow", { x: 25 })
-    .addIndicators({ name: "2 (duration: 600)" })
+    //.addIndicators({ name: "2 (duration: 600)" })
     .addTo(controller);
 
+var revealElements = document.getElementsByClassName("digit");
+var HTMLTriggerElements = document.getElementsByClassName("triggerElements");
+for (var i = 0; i < revealElements.length; i++) {
+    new ScrollMagic.Scene({
+        triggerElement: revealElements[i],
+        offset: 20,
+        triggerHook: 0.8,
+    })
+        .setClassToggle(revealElements[i], "visible")
+        .addIndicators({ name: "digit " + (i + 1) })
+        .addTo(controller);
+}

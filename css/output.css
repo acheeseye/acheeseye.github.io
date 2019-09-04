@@ -1,25 +1,34 @@
 .header img {
+  background-attachment: fixed;
   opacity: 0.7;
   min-width: 100%;
   height: 100vh;
 }
-.header .centered {
+
+.centered {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.header .centered h1, .header .centered h2 {
+.centered h1, .centered h2 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
 
 .section-odd {
-  background-color: beige;
+  background-color: #222;
+  color: #C8CCD1;
 }
 
 .section-even {
-  background-color: #ffecd6;
+  background-color: #43464A;
+  color: #FFFFFF;
+}
+
+.spacer0 {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .spacer1 {
@@ -44,6 +53,7 @@
 }
 .round-button:hover {
   opacity: 1;
+  content: "hello";
 }
 .round-button i {
   position: relative;
@@ -56,7 +66,7 @@
 .curtain {
   z-index: 2;
   position: absolute;
-  background-color: beige;
+  background-color: #222;
   min-width: 570px;
   min-height: 855px;
 }
@@ -64,13 +74,25 @@
 .imgme {
   z-index: 1;
   position: relative;
-  background-image: linear-gradient(to top, #190000, rgba(50, 0, 0, 0.5));
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .imgmeshadow {
   z-index: 0;
   position: relative;
   margin-top: -882px;
+}
+
+.get-in-touch-button {
+  opacity: 1;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  transition: opacity 0.25 ease;
+}
+.get-in-touch-button:hover {
+  opacity: 0.3;
+  background-color: transparent;
 }
 
 .hover-underline-menu {
@@ -121,6 +143,70 @@
 .content {
   position: relative;
   z-index: -1;
+}
+
+.digit {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.digit.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+.box1 {
+  display: block;
+  position: relative;
+  text-align: center;
+  min-width: 100px;
+  min-height: 50px;
+  margin: 0 auto 0 auto;
+}
+
+.triggerElement {
+  position: absolute;
+  text-align: center;
+  min-width: 100px;
+  margin: 0 auto 0 auto;
+}
+
+.projectContainer {
+  border: 10px;
+  border-style: solid;
+  border-color: black;
+  background-color: grey;
+}
+.projectContainer .projectName {
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.projectContainer .projectDescription {
+  display: inline-block;
+  padding: 30px;
+}
+.projectContainer .projectLanguages {
+  display: inline-block;
+}
+
+.interestContainer {
+  background-color: black;
+  max-width: 100px;
+  height: 80vh;
 }
 
 /*# sourceMappingURL=output.css.map */
