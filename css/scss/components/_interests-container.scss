@@ -1,5 +1,42 @@
 .interestContainer {
-    background-color: black;
-    max-width: 100px;
-    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowarp;
+    justify-content: space-around;
+}
+
+.interest {
+    background-image: linear-gradient(-45deg, #15995750, #15579950);
+    border-radius: 25px;
+    width: 300px;
+    height: 750px;
+    flex-direction: column;
+    padding: 15px;
+    .interestTitle {
+        padding-top: 10px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        color: white;
+    }
+    .interestImages {
+        display: flex;
+        background-color: black;
+        flex-flow: row wrap;
+        border-width: 10px;
+        border-color: white;
+        img {
+            opacity: 1;
+            width: 135px;
+            height: 135px;
+            background-size: cover;
+            transition: all 0.25s ease;
+            &:hover {
+                // opacity: 0.5;
+                content: "";
+            }
+        }
+            
+    }
 }
