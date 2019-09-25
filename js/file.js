@@ -22,7 +22,7 @@ var section1 = $("#section1"),
 
 section0Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
-    TweenMax.from(".menu", 2.5, { opacity: 0, ease: Power2.easeOut });
+    // TweenMax.from(".menu", 0.5, { right: -100, ease: Power2.easeOut });
 }
 section1Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
@@ -68,7 +68,7 @@ var scene = new ScrollMagic.Scene({
     duration: vh_value / 4, // offset + duration = ending px
     reverse: true,
 })
-    .setTween(".curtain", { y: -855 })
+    .setTween(".curtain", { x: -570 })
     //.addIndicators({ name: "2 (duration: 600)" })
     .addTo(controller);
 
@@ -91,6 +91,6 @@ for (var i = 0; i < revealElements.length; i++) {
         triggerHook: 0.8,
     })
         .setClassToggle(revealElements[i], "visible")
-        .addIndicators({ name: "digit " + (i + 1) })
+        // .addIndicators({ name: "digit " + (i + 1) })
         .addTo(controller);
 }
