@@ -8,20 +8,39 @@
 .centered {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
+}
+.centered img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
 }
 .centered h1, .centered h2 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
 
+#arrowdown.centered {
+  top: 85%;
+  height: auto;
+}
+#arrowdown.centered .resizer {
+  width: 200px;
+  transition: opacity 0.25s ease-in;
+}
+#arrowdown.centered .resizer:hover {
+  opacity: 0.5;
+}
+
 .section-odd {
+  min-height: 110vh;
   background-color: #222;
   color: #C8CCD1;
 }
 
 .section-even {
+  min-height: 110vh;
   background-color: #43464A;
   color: #FFFFFF;
 }
@@ -95,18 +114,31 @@
   background-color: transparent;
 }
 
+#section4.text-center {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+
 .hover-underline-menu {
   width: 100%;
 }
 .hover-underline-menu .menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: absolute;
-  right: 0;
+  right: 0px;
   width: 10em;
+  height: 100vh;
   background-color: #2C3840;
 }
 .hover-underline-menu .menu a {
   color: #FFFFFF;
   padding: 1.2rem 1.5rem;
+}
+.hover-underline-menu .menu a img {
+  padding-bottom: 10px;
 }
 .hover-underline-menu .menu .underline-from-center {
   position: relative;
@@ -204,9 +236,53 @@
 }
 
 .interestContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowarp;
+  justify-content: space-around;
+}
+
+.interest {
+  background-image: linear-gradient(-45deg, #15995750, #15579950);
+  border-radius: 25px;
+  width: 300px;
+  height: 750px;
+  flex-direction: column;
+  padding: 15px;
+}
+.interest .interestTitle {
+  padding-top: 10px;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+}
+.interest .interestImages {
+  display: flex;
   background-color: black;
-  max-width: 100px;
-  height: 80vh;
+  flex-flow: row wrap;
+  border-width: 10px;
+  border-color: white;
+}
+.interest .interestImages img {
+  opacity: 1;
+  width: 135px;
+  height: 135px;
+  background-size: cover;
+  transition: all 0.25s ease;
+}
+.interest .interestImages img:hover {
+  content: "";
+}
+
+.static {
+  position: absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=output.css.map */
