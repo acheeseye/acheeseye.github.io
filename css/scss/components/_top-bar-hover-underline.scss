@@ -4,11 +4,20 @@ $menu-underline-from-center-border-thickness: 0.125rem;
 .hover-underline-menu {
   width: 100%;
   .menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     position: absolute;
-    right: 0;
+    // top: 30vh;
+    right: 0px;
     width: 10em;
+    height: 100vh;
     background-color: $menu-underline-from-center-bg;
     a {
+      img {
+        padding-bottom: 10px;
+      }
       color: $white;
       padding: 1.2rem 1.5rem;
     }
