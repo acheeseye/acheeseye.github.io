@@ -1,21 +1,56 @@
 .projectContainer {
-    border: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowarp;
+    justify-content: space-around;
+    // background-color: black;
+}
+
+
+.project {
     border-style: solid;
-    border-color: black;
-    background-color: grey;
-    .projectName {
-        display: inline-block;
-        padding-left: 30px;
-        padding-top: 10px;
-    }
-    .projectDescription {
-        display: inline-block;
+    border-color: white;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 3px;
+    padding: 20px;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .projectContent {
+        width: 40vw;
         padding: 30px;
+        padding-right: 0px;
+        padding-left: 60px;
+        .projectName {
+        }
+        .projectDescription {
+        }
     }
     .projectIcon {
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7vw;
+        height: auto;
+        img {
+            width:7vw;
+            height:7vw;
+        }
     }
     .projectLanguages {
-        display: inline-block;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: end;
+        width: 13vw;
+    }
+    &:first-child {
+    }
+    &:last-child {
+        border-bottom-width: 0;
     }
 }
