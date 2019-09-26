@@ -6,7 +6,9 @@ $(document).ready(function () {
 var half_spacer = 40,
     scrollToDuration = 2.5;
 var scrollToExtraTopOffset = half_spacer;
-var section1 = $("#section1"),
+var sectionTop = $("#sectionTop"),
+    sectionTopTop = sectionTop.offset().top,
+    section1 = $("#section1"),
     section1Top = section1.offset().top - scrollToExtraTopOffset,
     section2 = $("#section2"),
     section2Top = section2.offset().top - scrollToExtraTopOffset,
@@ -15,6 +17,8 @@ var section1 = $("#section1"),
     section4 = $("#section4"),
     section4Top = section4.offset().top - scrollToExtraTopOffset,
 
+
+    sectionTopBtn = document.getElementById("sectionTopBtn"),
     section1Btn = document.getElementById("section1Btn"),
     section2Btn = document.getElementById("section2Btn"),
     section3Btn = document.getElementById("section3Btn"),
@@ -23,6 +27,9 @@ var section1 = $("#section1"),
 section0Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
     // TweenMax.from(".menu", 0.5, { right: -100, ease: Power2.easeOut });
+}
+sectionTopBtn.onclick = function () {
+    TweenMax.to(window, scrollToDuration, { scrollTo: sectionTopTop, ease: Expo.easeOut });
 }
 section1Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
@@ -93,4 +100,54 @@ for (var i = 0; i < revealElements.length; i++) {
         .setClassToggle(revealElements[i], "visible")
         // .addIndicators({ name: "digit " + (i + 1) })
         .addTo(controller);
+}
+
+google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+    var VFData = google.visualization.arrayToDataTable([
+        ['Language', 'Percentage of Project'],
+        ['JavaScript', 50.1],
+        ['HTML', 34.3],
+        ['CSS', 9.7],
+        ['Python', 5.8],
+        ['Shell', 0.1]
+    ]);
+
+    var AIData = google.visualization.arrayToDataTable([
+        ['Language', 'Percentage of Project'],
+        ['C++', 74.2],
+        ['C', 25.8]
+    ]);
+
+    var calcData = google.visualization.arrayToDataTable([
+        ['Language', 'Percentage of Project'],
+        ['Assembly', 100]
+    ]);
+
+    var options = {
+        pieHole: 0.7,
+        pieSliceText: 'none',
+        legend: {
+            alignment: 'center',
+        },
+        backgroundColor: 'transparent',
+        pieSliceBorderColor: 'transparent',
+        tooltip: {
+            trigger: 'selection',
+
+        },
+        chartArea: {
+            left: 10,
+            width: '100%',
+        },
+    };
+
+    var VFChart = new google.visualization.PieChart(document.getElementById('VFChart'));
+    var AIChart = new google.visualization.PieChart(document.getElementById('AIChart'));
+    var calcChart = new google.visualization.PieChart(document.getElementById('calcChart'));
+
+    VFChart.draw(VFData, options);
+    AIChart.draw(AIData, options);
+    calcChart.draw(calcData, options);
 }
