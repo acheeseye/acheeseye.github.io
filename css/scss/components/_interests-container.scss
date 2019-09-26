@@ -6,30 +6,41 @@
 }
 
 .interest {
-    background-image: linear-gradient(-45deg, #15995750, #15579950);
-    border-radius: 25px;
-    width: 300px;
+    background-color: transparent;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 2px;
+    &:last-child{
+        // background-image: linear-gradient(to left, rgba(128, 128, 128, 0.226), black);
+        // background-color: gray;
+        border-right-width: 0px;
+    }
+    // border-radius: 25px;
+    // width: 300px;
     height: 750px;
     flex-direction: column;
-    padding: 15px;
+    padding: 30px;
     .interestTitle {
-        padding-top: 10px;
+        h3 {
+            font-size: 2vw;
+        }
+        padding-bottom: 20px;
         height: auto;
         text-align: center;
         align-items: center;
         align-content: center;
-        color: white;
     }
     .interestImages {
         display: flex;
-        background-color: black;
         flex-flow: row wrap;
-        border-width: 10px;
-        border-color: white;
+        // background-color: black;
+        width: 18vw;
         img {
-            opacity: 1;
-            width: 135px;
-            height: 135px;
+            width: 9vw;
+            height: 9vw;
+            padding: 1vw;
             background-size: cover;
             transition: all 0.25s ease;
             &:hover {
