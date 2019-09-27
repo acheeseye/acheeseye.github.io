@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $("[data-menu-underline-from-center] a").addClass("underline-from-center");
 });
+var vh_value = document.documentElement.clientHeight;
 
 // animated scroll to
 var half_spacer = 40,
@@ -9,9 +10,9 @@ var scrollToExtraTopOffset = half_spacer;
 var sectionTop = $("#sectionTop"),
     sectionTopTop = sectionTop.offset().top,
     section1 = $("#section1"),
-    section1Top = section1.offset().top - scrollToExtraTopOffset,
+    section1Top = vh_value + scrollToExtraTopOffset,
     section2 = $("#section2"),
-    section2Top = section2.offset().top - scrollToExtraTopOffset,
+    section2Top = section1Top + vh_value,
     section3 = $("#section3"),
     section3Top = section3.offset().top - scrollToExtraTopOffset,
     section4 = $("#section4"),
@@ -59,7 +60,6 @@ function stickyFunction() {
     }
 }
 
-var vh_value = document.documentElement.clientHeight;
 
 // sine wave get started text
 var roundButton = document.getElementById("#fi-arrow-down");
@@ -76,29 +76,29 @@ var scene = new ScrollMagic.Scene({
     reverse: true,
 })
     .setTween(".curtain", { x: -570 })
-    //.addIndicators({ name: "2 (duration: 600)" })
+    // .addIndicators({ name: "2 (duration: 600)" })
     .addTo(controller);
 
 var scene = new ScrollMagic.Scene({
-    offset: vh_value + half_spacer * 3 + vh_value / 8 * 3, // starting px
+    offset: vh_value, // starting px
     triggerElement: "#trigger2",
-    duration: vh_value / 8, // offset + duration = ending px
+    duration: vh_value / 2, // offset + duration = ending px
     reverse: true,
 })
-    .setTween(".imgmeshadow", { x: 25 })
-    //.addIndicators({ name: "2 (duration: 600)" })
+    .setTween(".imgmeshadow", { x: -10 })
+    // .addIndicators({ name: "2 (duration: 600)" })
     .addTo(controller);
 
-var revealElements = document.getElementsByClassName("digit");
+var revealElementsAboutMe = document.getElementsByClassName("staggeredRevealContent");
 var HTMLTriggerElements = document.getElementsByClassName("triggerElements");
-for (var i = 0; i < revealElements.length; i++) {
+for (var i = 0; i < revealElementsAboutMe.length; i++) {
     new ScrollMagic.Scene({
-        triggerElement: revealElements[i],
+        triggerElement: revealElementsAboutMe[i],
         offset: 20,
-        triggerHook: 0.8,
+        triggerHook: 0.9,
     })
-        .setClassToggle(revealElements[i], "visible")
-        // .addIndicators({ name: "digit " + (i + 1) })
+        .setClassToggle(revealElementsAboutMe[i], "visible")
+        .addIndicators({ name: "digit " + (i + 1) })
         .addTo(controller);
 }
 
