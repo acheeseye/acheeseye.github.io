@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 
@@ -23,7 +24,7 @@
 <body>
     <div id="trigger2"></div>
     <div class="header" id="sectionTop">
-        <img src="images/IMG_3692.PNG" />
+        <img src="images/IMG_3692.PNG" style="image-orientation: from-image;" />
         <div class="centered">
             <img src="images/titlepage.png">
         </div>
@@ -41,16 +42,20 @@
                         ^</a></li>
                 <li><a class="underline-from-center" id="section1Btn">
                         <img src="images/project-placeholder.png">
-                        About Me</a></li>
+                        <h5>About Me</h5>
+                    </a></li>
                 <li><a class="underline-from-center" id="section2Btn">
                         <img src="images/project-placeholder.png">
-                        What I've Done</a></li>
+                        <h5>What I've Done</h5>
+                    </a></li>
                 <li><a class="underline-from-center" id="section3Btn">
                         <img src="images/project-placeholder.png">
-                        Interests</a></li>
+                        <h5>Art Design</h5>
+                    </a></li>
                 <li><a class="underline-from-center" id="section4Btn">
                         <img src="images/project-placeholder.png">
-                        Get In Touch</a></li>
+                        <h5>Get In Touch</h5>
+                    </a></li>
             </ul>
         </nav>
     </div>
@@ -60,72 +65,81 @@
 
 
     <div class="content">
-        <div class="section-odd">
+        <div class="section-odd" id="aboutme">
             <div class="spacer1"></div>
-            <div class="spacer1"></div>
+            <!-- <div class="spacer1"></div> -->
             <div class="row">
-                <div class="large-6 column">
+                <div class="large-6 column" id="aboutme-image-column">
                     <!-- <div class="logo">hello</div> -->
-                    <div class="curtain"></div>
+                    <!-- <div class="curtain"></div> -->
                     <img src="images/me.png" class="imgme">
-                    <img src="images/me_shadow.png" class="imgmeshadow">
+                    <img src="images/me_shadow_blurred.png" class="imgmeshadow">
                 </div>
                 <div class="large-6 column text-left" id="section1">
                     <div id="reveal-elements">
-                        <div class="box1 digit">
+                        <div class="staggeredRevealContent">
                             <h1>About Me</h1>
                         </div>
                         <div class="spacer0"></div>
 
-                        <div class="box1 digit">
-                            <h3>
-                                Taiwanese American graduated from Fairbanks, Alaska with a B. S. in Computer Science.
-                            </h3>
+                        <div class="staggeredRevealContent">
+                            <h4>
+                                Taiwanese American graduated from University of Alaska, Fairbanks with a Bachelor's
+                                Degree in
+                                Computer Science.
+                            </h4>
                         </div>
                         <div class="spacer0"></div>
-                        <div class="box1 digit">
-                            <h3>
-                                Passionate about solution creation or adaptation for problems of the modern world.
-                            </h3>
+                        <div class="staggeredRevealContent">
+                            <h4>
+                                Passionate about solution creation and adaptation.
+                            </h4>
                         </div>
                         <div class="spacer0"></div>
 
-                        <div class="box1 digit">
-                            <h3>
-
-                            </h3>
+                        <div class="staggeredRevealContent">
+                            <h4>
+                                Classically trained singer // Wannabe song-writer
+                            </h4>
+                        </div>
+                        <div class="staggeredRevealContent">
+                            <h4>
+                                Designer by heart // Programmer by choice
+                            </h4>
                         </div>
                     </div>
-                    <h3 class="subheader"></h3>
                 </div>
             </div>
-            <div class="spacer1"></div>
+            <!-- <div class="spacer1"></div> -->
         </div>
-        <div class="section-even">
+        <div class="section-even" id="projectBackground">
             <div class="spacer1"></div>
             <div class="row">
-                <div class="large-12 column text-left" id="section2">
+                <div class="large-12 column text-left staggeredRevealContent" id="section2">
                     <h1>What I've Done</h1>
                 </div>
             </div>
             <div class="spacer0"></div>
             <div class="projectContainer">
 
-                <div class="row project">
+                <div class="row project staggeredRevealContent">
                     <div class="projectIcon">
                         <img src="images/project-placeholder.png">
                     </div>
                     <div class="projectContent">
                         <div class="projectName">
-                            <h3>VOLUNTEER FAIRBANKS</h3>
+                            <h3>Volunteer Fairbanks</h3>
                         </div>
                         <div class="projectDescription">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
-                            urna
-                            viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
-                            facilisi.
-                            Sed
-                            iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in est.
+                            <h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
+                                urna
+                                viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
+                                facilisi.
+                                Sed
+                                iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in
+                                est.
+                            </h5>
                         </div>
                     </div>
                     <div class="projectLanguages">
@@ -133,42 +147,48 @@
                     </div>
                 </div>
 
-                <div class="row project">
+                <div class="row project staggeredRevealContent">
                     <div class="projectIcon">
                         <img src="images/project-placeholder.png">
                     </div>
                     <div class="projectContent">
                         <div class="projectName">
-                            <h3>NEURAL NETWORK CHECKERS</h3>
+                            <h3>Neural Network Checkers</h3>
                         </div>
                         <div class="projectDescription">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
-                            urna
-                            viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
-                            facilisi.
-                            Sed
-                            iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in est.
+                            <h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
+                                urna
+                                viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
+                                facilisi.
+                                Sed
+                                iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in
+                                est.
+                            </h5>
                         </div>
                     </div>
                     <div class="projectLanguages">
                         <div id="AIChart"></div>
                     </div>
                 </div>
-                <div class="row project">
+                <div class="row project staggeredRevealContent">
                     <div class="projectIcon">
                         <img src="images/project-placeholder.png">
                     </div>
                     <div class="projectContent">
                         <div class="projectName">
-                            <h3>ASSEMBLY CALCULATOR</h3>
+                            <h3>Assembly Calculator</h3>
                         </div>
                         <div class="projectDescription">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
-                            urna
-                            viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
-                            facilisi.
-                            Sed
-                            iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in est.
+                            <h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
+                                urna
+                                viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
+                                facilisi.
+                                Sed
+                                iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in
+                                est.
+                            </h5>
                         </div>
                     </div>
                     <div class="projectLanguages">
@@ -180,7 +200,7 @@
         <div class="section-odd">
             <div class="spacer1"></div>
             <div class="row column text-left">
-                <h1 id="section3">Interests</h1>
+                <h1 id="section3">Art Design</h1>
                 <div class="spacer0"></div>
 
                 <div class="row">
