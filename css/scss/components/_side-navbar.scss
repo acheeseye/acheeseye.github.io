@@ -1,0 +1,57 @@
+.hover-underline-menu {
+  width: 100%;
+  .menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    // top: 30vh;
+    right: 0px;
+    width: 9vw;
+    height: 100vh;
+    background-color: $menu-underline-from-center-bg;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+    a {
+      color: $white;
+      // padding: 1.2rem 1.5rem;
+      font-size: 3vw;
+    }
+    
+  }
+}
+
+
+.underline-from-center {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - #{$menu-underline-from-center-border-thickness});
+    border-bottom: $menu-underline-from-center-border-thickness solid $white;
+    left: 50%;
+    right: 50%;
+    transition: all 0.5s ease;
+  }
+
+  &:hover::after {
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+  }
+}
+
+.to-top-chevron {
+  font-size: 3vw;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    color: gray;
+  }
+}
+
+.get-in-touch-icons {
+  font-size: 2vw;
+  color:white;
+}
