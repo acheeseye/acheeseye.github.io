@@ -1,3 +1,5 @@
+@import '../variables';
+
 .projectContainer {
     display: flex;
     flex-direction: column;
@@ -17,14 +19,13 @@
     // background-color: black;
 }
 
-
 .project {
     border-style: solid;
     border-color: white;
     border-top-width: 0px;
     border-left-width: 0px;
     border-right-width: 0px;
-    border-bottom-width: 3px;
+    border-bottom-width: $separator-line-width;
     padding: 20px;
     background-color: transparent;
 
@@ -38,11 +39,23 @@
         padding-right: 0px;
         padding-left: 60px;
         .projectName {
+            a {
+                i {
+                    font-size: 0.9em;
+                }
+                color: #0092d1;
+                transition: color 0.25s ease;
+                &:hover {
+                    cursor: pointer;
+                    color: #7dd8ff;
+                }
+            }
         }
         .projectDescription {
         }
     }
     .projectIcon {
+        font-size: 5vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -59,9 +72,14 @@
         // justify-content: end;
         width: 13vw;
     }
-    &:first-child {
-    }
     &:last-child {
         border-bottom-width: 0;
     }
+}
+
+.open-link-in-new-tab {
+    height: 2em;
+    width: 2em;
+    // display: inline;
+    
 }
