@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="css/output.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+    <script src="https://kit.fontawesome.com/689e78e575.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -30,34 +32,41 @@
         </div>
         <div class="centered" id="arrowdown">
             <div class="resizer">
-
                 <img src="images/titlearrow.png" id="section0Btn">
             </div>
         </div>
     </div>
     <div id="navbar">
         <nav class="hover-underline-menu" data-menu-underline-from-center>
-            <ul class="vertical menu align-center">
-                <li><a class="underline-from-center" id="sectionTopBtn">
-                        ^</a></li>
+            <ul class="menu align-center">
+                <li>
+                    <div class="to-top-chevron" id="sectionTopBtn">
+                        <i class="fas fa-angle-up"></i>
+                    </div>
+                </li>
                 <li><a class="underline-from-center" id="section1Btn">
-                        <img src="images/project-placeholder.png">
+                        <i class="fas fa-address-card"></i>
                         <h5>About Me</h5>
                     </a></li>
                 <li><a class="underline-from-center" id="section2Btn">
-                        <img src="images/project-placeholder.png">
+                        <i class="fas fa-project-diagram"></i>
                         <h5>What I've Done</h5>
                     </a></li>
                 <li><a class="underline-from-center" id="section3Btn">
-                        <img src="images/project-placeholder.png">
+                        <i class="fas fa-paint-brush"></i>
                         <h5>Art Design</h5>
                     </a></li>
-                <li><a class="underline-from-center" id="section4Btn">
-                        <img src="images/project-placeholder.png">
-                        <h5>Get In Touch</h5>
-                    </a></li>
-            </ul>
-        </nav>
+                <li>
+                    <div class="get-in-touch-icons">
+                        <i class="fi-social-github"></i>
+                        <i class="fi-social-linkedin"></i>
+                        <i class="fi-social-instagram"></i>
+                        <i class="fi-mail"></i>
+                </li>
+    </div>
+    </li>
+    </ul>
+    </nav>
     </div>
     <!-- <div id="animate2">
         <p>Smurf me!</p>
@@ -124,11 +133,16 @@
 
                 <div class="row project staggeredRevealContent">
                     <div class="projectIcon">
-                        <img src="images/project-placeholder.png">
+                        <i class="fas fa-hands-helping"></i>
                     </div>
                     <div class="projectContent">
                         <div class="projectName">
-                            <h3>Volunteer Fairbanks</h3>
+                            <a href="https://github.com/mcszymist/IAIDSWebsite" target="_blank">
+                                <h3>
+                                    <i class="fi-social-github"></i>
+                                    Volunteer Fairbanks
+                                </h3>
+                            </a>
                         </div>
                         <div class="projectDescription">
                             <h5>
@@ -149,11 +163,17 @@
 
                 <div class="row project staggeredRevealContent">
                     <div class="projectIcon">
-                        <img src="images/project-placeholder.png">
+                        <i class="fas fa-chess-pawn"></i>
                     </div>
                     <div class="projectContent">
                         <div class="projectName">
-                            <h3>Neural Network Checkers</h3>
+
+                            <a href="https://github.com/acheeseye/ai-playing-checkers" target="_blank">
+                                <h3>
+                                    <i class="fi-social-github"></i>
+                                    Neural Network Checkers Player
+                                </h3>
+                            </a>
                         </div>
                         <div class="projectDescription">
                             <h5>
@@ -173,11 +193,16 @@
                 </div>
                 <div class="row project staggeredRevealContent">
                     <div class="projectIcon">
-                        <img src="images/project-placeholder.png">
+                        <i class="fas fa-calculator"></i>
                     </div>
                     <div class="projectContent">
                         <div class="projectName">
-                            <h3>Assembly Calculator</h3>
+                            <a href="https://github.com/acheeseye/cs301calculatorProj" target="_blank">
+                                <h3>
+                                    <i class="fi-social-github"></i>
+                                    Assembly Calculator
+                                </h3>
+                            </a>
                         </div>
                         <div class="projectDescription">
                             <h5>
@@ -200,67 +225,58 @@
         <div class="section-odd">
             <div class="spacer1"></div>
             <div class="row column text-left">
-                <h1 id="section3">Art Design</h1>
+                <h1 class="staggeredRevealContent" id="section3">Art Design</h1>
                 <div class="spacer0"></div>
 
                 <div class="row">
                     <div class="interestContainer">
                         <div class="interest">
-                            <div class="interestTitle">
+                            <div class="interestTitle staggeredRevealContent">
                                 <h3>Cake Decoration</h3>
                             </div>
+
                             <div class="interestImages">
                                 <!-- <img class="static" src="images/frame0singing.png"> -->
-                                <img src="images/orangeblue.png">
-                                <img src="images/ombrecake.png">
-                                <img src="images/strawberrypops.png">
-                                <img src="images/rainbowpops.png">
-                                <img src="images/IMG_3692.PNG">
-                                <img src="images/IMG_3692.PNG">
+                                <img src="images/orangeblue.png" class="staggeredRevealContent">
+                                <img src="images/ombrecake.png" class="staggeredRevealContent">
+                                <img src="images/strawberrypops.png" class="staggeredRevealContent">
+                                <img src="images/rainbowpops.png" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
                             </div>
                         </div>
                         <div class="interest">
-                            <div class="interestTitle">
+                            <div class="interestTitle staggeredRevealContent">
                                 <h3>
                                     Pixel Art
                                 </h3>
                             </div>
                             <div class="interestImages">
-                                <img src="images/db13it2-5b6bd29b-8ca2-419b-b550-dc3a2fc5aef8.gif">
-                                <img src="images/vacuum.gif">
-                                <img src="images/robe_entity_1000.gif">
-                                <img src="images/16x16skelly_idol.gif">
-                                <img src="images/bloodmoonjhin.png">
-                                <img src="images/IMG_3692.PNG">
+                                <img src="images/db13it2-5b6bd29b-8ca2-419b-b550-dc3a2fc5aef8.gif"
+                                    class="staggeredRevealContent">
+                                <img src="images/vacuum.gif" class="staggeredRevealContent">
+                                <img src="images/robe_entity_1000.gif" class="staggeredRevealContent">
+                                <img src="images/16x16skelly_idol.gif" class="staggeredRevealContent">
+                                <img src="images/bloodmoonjhin.png" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
                             </div>
                         </div>
                         <div class="interest">
-                            <div class="interestTitle">
+                            <div class="interestTitle staggeredRevealContent">
                                 <h3>Charcoal</h3>
                             </div>
                             <div class="interestImages">
-                                <img src="images/IMG_3692.PNG">
-                                <img src="images/IMG_3692.PNG">
-                                <img src="images/IMG_3692.PNG">
-                                <img src="images/IMG_3692.PNG">
-                                <img src="images/IMG_3692.PNG">
-                                <img src="images/IMG_3692.PNG">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
+                                <img src="images/IMG_3692.PNG" class="staggeredRevealContent">
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- <div class="interestContainer">hello</div> -->
-            </div>
-            <div class="spacer1"></div>
-        </div>
-        <div class="section-even">
-            <div class="spacer1"></div>
-            <div class="row column text-center" id="section4">
-                <img class="get-in-touch-button button" src="images/email-icon.png">
-                <img class="get-in-touch-button button" src="images/github-icon-cropped.png">
-                <img class="get-in-touch-button button" src="images/linkedin.png">
-                <img class="get-in-touch-button button" src="images/instagram.png">
-                <h2>"Some quote here?" <br>- Anon</h2>
             </div>
             <div class="spacer1"></div>
         </div>
@@ -273,8 +289,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/link-external.svg"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="js/file.js"></script>
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
 </body>
 
 
