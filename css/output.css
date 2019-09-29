@@ -104,14 +104,15 @@ h1, h2, h3, h4, h5 {
   transition: all 0.5s ease;
 }
 .underline-from-center:hover::after {
-  left: 0;
-  right: 0;
+  left: 1vw;
+  right: 1vw;
   transition: all 0.5s ease;
 }
 
 .to-top-chevron {
   font-size: 3vw;
   color: white;
+  transition: color 0.15s ease;
 }
 .to-top-chevron:hover {
   cursor: pointer;
@@ -119,8 +120,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .get-in-touch-icons {
+  justify-content: center;
+  text-align: center;
+}
+.get-in-touch-icons i {
   font-size: 2vw;
   color: white;
+  transition: color 0.15s ease;
+}
+.get-in-touch-icons i:hover {
+  color: gray;
 }
 
 .target-transistionable a {
