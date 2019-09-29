@@ -4,11 +4,6 @@
     color: rgb(83, 83, 83);
 }
 
-h1, h2, h3, h4, h5 {
-    // font-family: 'Times New Roman', Times, serif;
-    font-family: 'Microsoft Yi Baiti';
-}
-
 #aboutme-imagecolumn {
     padding-bottom: 0px;
 }
@@ -21,4 +16,25 @@ h1, h2, h3, h4, h5 {
     // background-color: rgba(0, 0, 0, 0.452);
     // transform: rotateY(30deg) rotateX(0deg) rotateZ(0deg);
     // position: absolute;
+}
+
+.imgme {
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+    // background-color: rgba(0,0,0,0.3);
+    // background-image: linear-gradient(to top, shade(rgba(50,0,0,1), 50), rgba(50,0,0,0.5));
+}
+
+.imgmeshadow {
+    position: absolute;
+    // margin-top: -1032px;
+    // margin-top: -882px;
+    margin-top: 50px;
+    margin-left: -570px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 570px;
+    height: auto;
 }
