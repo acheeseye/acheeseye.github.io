@@ -10,20 +10,17 @@ var scrollToExtraTopOffset = half_spacer;
 var sectionTop = $("#sectionTop"),
     sectionTopTop = sectionTop.offset().top,
     section1 = $("#section1"),
-    section1Top = vh_value + scrollToExtraTopOffset,
+    section1Top = vh_value + scrollToExtraTopOffset + 1,
     section2 = $("#section2"),
     section2Top = section1Top + vh_value,
     section3 = $("#section3"),
-    section3Top = section3.offset().top - scrollToExtraTopOffset,
-    section4 = $("#section4"),
-    section4Top = section4.offset().top - scrollToExtraTopOffset,
+    section3Top = section2Top + vh_value,
 
 
     sectionTopBtn = document.getElementById("sectionTopBtn"),
     section1Btn = document.getElementById("section1Btn"),
     section2Btn = document.getElementById("section2Btn"),
-    section3Btn = document.getElementById("section3Btn"),
-    section4Btn = document.getElementById("section4Btn");
+    section3Btn = document.getElementById("section3Btn");
 
 section0Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
@@ -41,9 +38,6 @@ section2Btn.onclick = function () {
 section3Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section3Top, ease: Expo.easeOut });
 }
-section4Btn.onclick = function () {
-    TweenMax.to(window, scrollToDuration, { scrollTo: section4Top, ease: Expo.easeOut });
-}
 
 // sticky navbar
 
@@ -59,13 +53,6 @@ function stickyFunction() {
         navbar.classList.remove("sticky");
     }
 }
-
-
-// sine wave get started text
-var roundButton = document.getElementById("#fi-arrow-down");
-
-// TweenMax.to(".fi-arrow-down", 1.5, { ease: Sine.easeInOut, opacity: 0.5, repeat: -1 });
-var testTween = TweenMax.to(".logo", { left: 300 });
 
 var controller = new ScrollMagic.Controller();
 
@@ -98,7 +85,7 @@ for (var i = 0; i < revealElementsAboutMe.length; i++) {
         triggerHook: 0.9,
     })
         .setClassToggle(revealElementsAboutMe[i], "visible")
-        .addIndicators({ name: "digit " + (i + 1) })
+        // .addIndicators({ name: "digit " + (i + 1) })
         .addTo(controller);
 }
 
@@ -130,6 +117,11 @@ function drawChart() {
         pieSliceText: 'none',
         legend: {
             alignment: 'center',
+            textStyle: {
+                color: 'white',
+                fontSize: '15',
+                fontName: 'Microsoft Yi Baiti',
+            },
         },
         backgroundColor: 'transparent',
         pieSliceBorderColor: 'transparent',
