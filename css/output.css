@@ -236,11 +236,6 @@ h1, h2, h3, h4, h5 {
   border-bottom-width: 0;
 }
 
-.open-link-in-new-tab {
-  height: 2em;
-  width: 2em;
-}
-
 .interestContainer {
   display: flex;
   flex-direction: row;
@@ -282,16 +277,8 @@ h1, h2, h3, h4, h5 {
   transition: all 0.25s ease;
 }
 .interest .interestImages img:hover {
+  opacity: 0.5;
   content: "";
-}
-
-.static {
-  position: absolute;
-  background: white;
-}
-
-.static:hover {
-  opacity: 0;
 }
 
 #aboutme {

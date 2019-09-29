@@ -1,5 +1,4 @@
 #aboutme {
-    // background-image: linear-gradient(to left, #799db1, #4996c0);
     background-color: white;
     color: rgb(83, 83, 83);
 }
@@ -23,14 +22,10 @@
     z-index: 1;
     position: relative;
     box-sizing: border-box;
-    // background-color: rgba(0,0,0,0.3);
-    // background-image: linear-gradient(to top, shade(rgba(50,0,0,1), 50), rgba(50,0,0,0.5));
 }
 
 .imgmeshadow {
     position: absolute;
-    // margin-top: -1032px;
-    // margin-top: -882px;
     margin-top: 50px;
     margin-left: -570px;
     padding-bottom: 0px;

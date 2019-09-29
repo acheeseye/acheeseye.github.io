@@ -15,19 +15,12 @@
     border-left-width: 0px;
     border-right-width: $separator-line-width;
     &:last-child{
-        // background-image: linear-gradient(to left, rgba(128, 128, 128, 0.226), black);
-        // background-color: gray;
         border-right-width: 0px;
     }
-    // border-radius: 25px;
-    // width: 300px;
     flex-direction: column;
     align-content: space-between;
     padding: 30px;
     .interestTitle {
-        h3 {
-            // font-size: 2vw;
-        }
         padding-bottom: 40px;
         height: auto;
         text-align: center;
@@ -37,7 +30,6 @@
     .interestImages {
         display: flex;
         flex-flow: row wrap;
-        // background-color: black;
         width: 18vw;
         img {
             width: 9vw;
@@ -46,7 +38,7 @@
             background-size: cover;
             transition: all 0.25s ease;
             &:hover {
-                // opacity: 0.5;
+                opacity: 0.5;
                 content: "";
             }
         }
