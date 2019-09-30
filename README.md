@@ -31,3 +31,5 @@ https://blog.hubspot.com/marketing/best-personal-websites
 - font previewer: https://wordmark.it/
 
 - font icons: https://fontawesome.com/
+
+- scroll related: https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
