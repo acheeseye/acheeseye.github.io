@@ -31,20 +31,18 @@
             <img src="images/titlepage.png">
         </div>
         <div class="centered" id="arrowdown">
-            <div class="resizer">
-                <img src="images/titlearrow.png" id="section0Btn">
-            </div>
+            <i class="fas fa-angle-down" id="section0Btn"></i>
         </div>
     </div>
     <div id="navbar">
         <nav class="hover-underline-menu" data-menu-underline-from-center>
-            <ul class="menu align-center">
+            <ul class="menu align-center" id="sidenav">
                 <li>
                     <div class="to-top-chevron" id="sectionTopBtn">
                         <i class="fas fa-angle-up"></i>
                     </div>
                 </li>
-                <li><a class="underline-from-center" id="section1Btn">
+                <li><a class="underline-from-center activeTab" id="section1Btn">
                         <i class="fas fa-address-card"></i>
                         <h5>About Me</h5>
                     </a></li>
@@ -73,19 +71,12 @@
     </ul>
     </nav>
     </div>
-    <!-- <div id="animate2">
-        <p>Smurf me!</p>
-    </div> -->
-
 
     <div class="content">
         <div class="section-odd" id="aboutme">
             <div class="spacer1"></div>
-            <!-- <div class="spacer1"></div> -->
             <div class="row">
                 <div class="large-6 column" id="aboutme-image-column">
-                    <!-- <div class="logo">hello</div> -->
-                    <!-- <div class="curtain"></div> -->
                     <img src="images/me.png" class="imgme">
                     <img src="images/me_shadow_blurred.png" class="imgmeshadow">
                 </div>
@@ -124,7 +115,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="spacer1"></div> -->
         </div>
         <div class="section-even">
             <div class="spacer1"></div>
@@ -133,7 +123,6 @@
                     <h1>What I've Done</h1>
                 </div>
             </div>
-            <div class="spacer0"></div>
             <div class="projectContainer">
 
                 <div class="row project staggeredRevealContent">
@@ -143,21 +132,24 @@
                     <div class="projectContent">
                         <div class="projectName">
                             <a href="https://github.com/mcszymist/IAIDSWebsite" target="_blank">
-                                <h3>
-                                    <i class="fi-social-github"></i>
-                                    Volunteer Fairbanks
-                                </h3>
+                                <span>
+                                    <h3>
+                                        <i class="fi-social-github"></i>
+                                        Volunteer Fairbanks
+                                        <span class="projectNameNote">/ group of 5</span>
+                                    </h3>
+                                </span>
                             </a>
                         </div>
                         <div class="projectDescription">
                             <h5>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
-                                urna
-                                viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
-                                facilisi.
-                                Sed
-                                iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in
-                                est.
+                                Centralized individuals on a website to promote faster volunteer event planning. I was
+                                responsible for all
+                                of the front-end development; this included learning related front-end tools within
+                                allotted time
+                                and figuring out how to tie in the front-end with parts of the database. Functionality
+                                includes viewing an
+                                event calendar, add/remove events/organizations and jobs for events.
                             </h5>
                         </div>
                     </div>
@@ -177,18 +169,21 @@
                                 <h3>
                                     <i class="fi-social-github"></i>
                                     Neural Network Checkers Player
+                                    <span class="projectNameNote">/ group of 3</span>
                                 </h3>
                             </a>
                         </div>
                         <div class="projectDescription">
                             <h5>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
-                                urna
-                                viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
-                                facilisi.
-                                Sed
-                                iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in
-                                est.
+                                A neural network set to evolve into a checkers player with a level of intelligence. I
+                                was responsible for
+                                the development of
+                                the neural network and debugged the min-max function used. I also worked
+                                with file
+                                creation/storing for generational data, SFML for checkers GUI creation, C for
+                                increasing performance during
+                                neural network training, as well as reviewing checkers replays for signs of
+                                intelligence.
                             </h5>
                         </div>
                     </div>
@@ -206,18 +201,17 @@
                                 <h3>
                                     <i class="fi-social-github"></i>
                                     Assembly Calculator
+                                    <span class="projectNameNote">/ group of 2</span>
                                 </h3>
                             </a>
                         </div>
                         <div class="projectDescription">
                             <h5>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit at
-                                urna
-                                viverra laoreet. Duis ut nibh quis lectus aliquam porttitor ut sit amet massa. Nulla
-                                facilisi.
-                                Sed
-                                iaculis, lorem eget rutrum blandit, sapien nulla dignissim leo, eu tincidunt sem ex in
-                                est.
+                                A calculator written in assembly that performs postfix calculations. Operators allowed
+                                include add,
+                                subtract, multiply, and parentheses. I was responsible for inputs and outputs of single
+                                digited operations
+                                and documentation of the project.
                             </h5>
                         </div>
                     </div>
@@ -241,7 +235,6 @@
                             </div>
 
                             <div class="interestImages">
-                                <!-- <img class="static" src="images/frame0singing.png"> -->
                                 <img src="images/orangeblue.png" class="staggeredRevealContent">
                                 <img src="images/ombrecake.png" class="staggeredRevealContent">
                                 <img src="images/strawberrypops.png" class="staggeredRevealContent">
@@ -281,7 +274,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="interestContainer">hello</div> -->
             </div>
             <div class="spacer1"></div>
         </div>
