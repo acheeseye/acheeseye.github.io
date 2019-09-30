@@ -14,7 +14,7 @@
     border-left-width: 0px;
     border-right-width: 0px;
     border-bottom-width: $separator-line-width;
-    padding: 20px;
+    padding: 10px;
     background-color: transparent;
 
     display: flex;
@@ -23,9 +23,9 @@
 
     .projectContent {
         width: 40vw;
-        padding: 30px;
-        padding-right: 0px;
-        padding-left: 60px;
+        padding: 1vw;
+        padding-right: 2vw;
+        padding-left: 3vw;
         .projectName {
             a {
                 i {
@@ -34,9 +34,13 @@
                 color: #0092d1;
                 transition: color 0.25s ease;
                 &:hover {
-                    cursor: pointer;
+                    // cursor: pointer;
                     color: #7dd8ff;
                 }
+            }
+            .projectNameNote {
+                font-size: 1vw;
+                color: gray;
             }
         }
     }
