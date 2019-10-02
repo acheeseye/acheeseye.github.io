@@ -6,20 +6,21 @@
     <title>Jason Hsi</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            /* font-family: Arial, Helvetica, sans-serif; */
-            font-family: 'Courier New', Courier, monospace;
-        }
-    </style>
+
 
     <!-- foundation CDN reference -->
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <!-- personal css reference -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Open+Sans+Condensed:300|Quicksand|Raleway&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manjari:100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/output.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <script src="https://kit.fontawesome.com/689e78e575.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 
@@ -34,9 +35,15 @@
             <i class="fas fa-angle-down" id="section0Btn"></i>
         </div>
     </div>
+    <!-- <form action="?" method="POST">
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <br />
+        <input type="submit" value="Submit">
+    </form> -->
     <div id="navbar">
         <nav class="hover-underline-menu" data-menu-underline-from-center>
             <ul class="menu align-center" id="sidenav">
+
                 <li>
                     <div class="to-top-chevron" id="sectionTopBtn">
                         <i class="fas fa-angle-up"></i>
@@ -47,16 +54,20 @@
                         <h5>About Me</h5>
                     </a></li>
                 <li><a class="underline-from-center" id="section2Btn">
-                        <i class="fas fa-project-diagram"></i>
+                        <i class="fas fa-code"></i>
                         <h5>What I've Done</h5>
                     </a></li>
                 <li><a class="underline-from-center" id="section3Btn">
                         <i class="fas fa-paint-brush"></i>
                         <h5>Art Design</h5>
                     </a></li>
+                <li><a class="underline-from-center" id="section4Btn">
+                        <i class="fas fa-tools"></i>
+                        <h5>Skillset</h5>
+                    </a></li>
                 <li>
                     <div class="get-in-touch-icons">
-                        <a href="#" target="_blank">
+                        <a href="mailto: jznhsi@gmail.com">
                             <i class="fi-mail"></i>
                         </a>
                         <a href="https://github.com/acheeseye" target="_blank">
@@ -71,60 +82,64 @@
     </ul>
     </nav>
     </div>
-
+    <div id="result"></div>
     <div class="content">
-        <div class="section-odd" id="aboutme">
-            <div class="spacer1"></div>
+        <div id="section1"></div>
+        <div class="section-odd aboutme">
+            <div class="spacer0"></div>
             <div class="row">
-                <div class="large-6 column" id="aboutme-image-column">
+                <div class="large-6 column aboutme-image-column">
                     <img src="images/me.png" class="imgme">
                     <img src="images/me_shadow_blurred.png" class="imgmeshadow">
                 </div>
-                <div class="large-6 column text-left" id="section1">
-                    <div id="reveal-elements">
-                        <div class="staggeredRevealContent">
-                            <h1>About Me</h1>
-                        </div>
-                        <div class="spacer0"></div>
+                <div class="aboutme-text-column">
 
-                        <div class="staggeredRevealContent">
-                            <h4>
-                                Taiwanese American graduated from University of Alaska, Fairbanks with a Bachelor's
-                                Degree in
-                                Computer Science.
-                            </h4>
-                        </div>
-                        <div class="spacer0"></div>
-                        <div class="staggeredRevealContent">
-                            <h4>
-                                Passionate about solution creation and adaptation.
-                            </h4>
-                        </div>
-                        <div class="spacer0"></div>
+                    <div class="large-6 column text-left aboutme-text-column">
+                        <div id="reveal-elements">
+                            <div class="staggeredRevealContent">
+                                <h1>About Me</h1>
+                            </div>
+                            <div class="spacer0"></div>
 
-                        <div class="staggeredRevealContent">
-                            <h4>
-                                Classically trained singer // Wannabe song-writer
-                            </h4>
-                        </div>
-                        <div class="staggeredRevealContent">
-                            <h4>
-                                Designer by heart // Programmer by choice
-                            </h4>
+                            <div class="staggeredRevealContent">
+                                <h4>
+                                    Taiwanese American graduated from University of Alaska, Fairbanks with a Bachelor's
+                                    Degree in
+                                    Computer Science.
+                                </h4>
+                            </div>
+                            <div class="spacer0"></div>
+                            <div class="staggeredRevealContent">
+                                <h4>
+                                    Passionate about solution creation and adaptation.
+                                </h4>
+                            </div>
+                            <div class="spacer0"></div>
+
+                            <div class="staggeredRevealContent">
+                                <h4>
+                                    Classically trained singer // Wannabe song-writer
+                                </h4>
+                            </div>
+                            <div class="staggeredRevealContent">
+                                <h4>
+                                    Designer by heart // Programmer by choice
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="section2"></div>
         <div class="section-even">
             <div class="spacer1"></div>
             <div class="row">
-                <div class="large-12 column text-left staggeredRevealContent" id="section2">
+                <div class="large-12 column text-left staggeredRevealContent">
                     <h1>What I've Done</h1>
                 </div>
             </div>
             <div class="projectContainer">
-
                 <div class="row project staggeredRevealContent">
                     <div class="projectIcon">
                         <i class="fas fa-hands-helping"></i>
@@ -221,10 +236,11 @@
                 </div>
             </div>
         </div>
+        <div id="section3"></div>
         <div class="section-odd">
             <div class="spacer1"></div>
             <div class="row column text-left">
-                <h1 class="staggeredRevealContent" id="section3">Art Design</h1>
+                <h1 class="staggeredRevealContent">Art Design</h1>
                 <div class="spacer0"></div>
 
                 <div class="row">
@@ -277,6 +293,26 @@
             </div>
             <div class="spacer1"></div>
         </div>
+        <div id="section4"></div>
+        <div class="skillset">
+            <div class="spacer1"></div>
+            <div class="row text-left staggeredRevealContent">
+                <h1>Skillset</h1>
+            </div>
+            <div class="row">
+
+                <div class="skillContainer">
+                    <span class="skillTitle">C++</span>
+                    <span class="skillLevel"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                </div>
+                <div class="skillContainer">
+                    <span class="skillTitle">C++</span>
+                    <span class="skillLevel"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- jQuery google CDN reference -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -286,10 +322,11 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/link-external.svg"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="js/file.js"></script>
-    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script type="text/javascript" src="js/google-charts.js"></script>
+    <!-- <script type="text/javascript" src="js/active-tab.js"></script> -->
+    <!-- <script type="text/javascript" src="js/staggered-reveal.js"></script> -->
 </body>
 
 
