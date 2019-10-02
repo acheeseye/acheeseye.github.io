@@ -43,3 +43,5 @@ https://codepen.io/joxmar/pen/NqqMEg
 - reflective property: https://www.codesdope.com/blog/article/add-impressive-reflection-effects-using-only-css/
 
 - recaptcha: https://www.google.com/recaptcha/admin/create
+
+- responsive: https://developers.google.com/web/fundamentals/design-and-ux/responsive
