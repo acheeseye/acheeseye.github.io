@@ -5,28 +5,31 @@ var vh_value = document.documentElement.clientHeight;
 
 // animated scroll to
 var half_spacer = 40,
-    scrollToDuration = 2.5;
-var scrollToExtraTopOffset = half_spacer;
-var sectionTop = $("#sectionTop"),
-    sectionTopTop = sectionTop.offset().top,
-    section1 = $("#section1"),
-    section1Top = vh_value + scrollToExtraTopOffset + 1,
-    section2 = $("#section2"),
-    section2Top = section1Top + vh_value,
-    section3 = $("#section3"),
-    section3Top = section2Top + vh_value,
+    scrollToDuration = 2.5,
+    // scrollToExtraTopOffset = half_spacer,
 
+    sectionTop = $("#sectionTop"),
+    section1 = $("#section1"),
+    section2 = $("#section2"),
+    section3 = $("#section3"),
+    section4 = $("#section4"),
+
+    sectionTopTop = sectionTop.offset().top,
+    section1Top = section1.offset().top,
+    section2Top = section2.offset().top,
+    section3Top = section3.offset().top,
+    section4Top = section4.offset().top,
 
     sectionTopBtn = document.getElementById("sectionTopBtn"),
     section1Btn = document.getElementById("section1Btn"),
     section2Btn = document.getElementById("section2Btn"),
-    section3Btn = document.getElementById("section3Btn");
+    section3Btn = document.getElementById("section3Btn"),
+    section4Btn = document.getElementById("section4Btn");
 
 
 
 section0Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
-    // TweenMax.from(".menu", 0.5, { right: -100, ease: Power2.ease });
 }
 sectionTopBtn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: sectionTopTop, ease: Expo.easeOut });
@@ -40,6 +43,9 @@ section2Btn.onclick = function () {
 section3Btn.onclick = function () {
     TweenMax.to(window, scrollToDuration, { scrollTo: section3Top, ease: Expo.easeOut });
 }
+section4Btn.onclick = function () {
+    TweenMax.to(window, scrollToDuration, { scrollTo: section4Top, ease: Expo.easeOut });
+}
 
 // sticky navbar
 
@@ -51,7 +57,7 @@ var sticky = navbar.offsetTop;
 function stickyFunction() {
     // console.log(window.pageYOffset);
     // console.log(sticky);
-    if (window.pageYOffset >= sticky) {
+    if (window.pageYOffset >= section1Top) {
         navbar.classList.add("sticky")
     } else {
         navbar.classList.remove("sticky");
@@ -93,66 +99,13 @@ for (var i = 0; i < revealElementsAboutMe.length; i++) {
         .addTo(controller);
 }
 
-google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-    var VFData = google.visualization.arrayToDataTable([
-        ['Language', 'Percentage of Project'],
-        ['JavaScript', 50.1],
-        ['HTML', 34.3],
-        ['CSS', 9.7],
-        ['Python', 5.8],
-        ['Shell', 0.1]
-    ]);
 
-    var AIData = google.visualization.arrayToDataTable([
-        ['Language', 'Percentage of Project'],
-        ['C++', 74.2],
-        ['C', 25.8]
-    ]);
-
-    var calcData = google.visualization.arrayToDataTable([
-        ['Language', 'Percentage of Project'],
-        ['Assembly', 100]
-    ]);
-
-    var options = {
-        pieHole: 0.7,
-        pieSliceText: 'none',
-        legend: {
-            alignment: 'center',
-            textStyle: {
-                color: 'white',
-                fontSize: '15',
-                fontName: 'Microsoft Yi Baiti',
-            },
-        },
-        backgroundColor: 'transparent',
-        pieSliceBorderColor: 'transparent',
-        tooltip: {
-            trigger: 'selection',
-
-        },
-        chartArea: {
-            left: 0,
-            width: '100%',
-        },
-    };
-
-    var VFChart = new google.visualization.PieChart(document.getElementById('VFChart'));
-    var AIChart = new google.visualization.PieChart(document.getElementById('AIChart'));
-    var calcChart = new google.visualization.PieChart(document.getElementById('calcChart'));
-
-    VFChart.draw(VFData, options);
-    AIChart.draw(AIData, options);
-    calcChart.draw(calcData, options);
-}
 
 
 var menuContainer = document.getElementById("sidenav");
 var menuItems = menuContainer.getElementsByClassName("underline-from-center");
 var sectionTriggerOffset = vh_value / 2;
-var sectionTriggerPoints = [section1Top - sectionTriggerOffset, section2Top - sectionTriggerOffset, section3Top - sectionTriggerOffset];
+var sectionTriggerPoints = [section1Top - sectionTriggerOffset, section2Top - sectionTriggerOffset, section3Top - sectionTriggerOffset, section4Top - sectionTriggerOffset];
 var lastTriggerPointIndex = sectionTriggerPoints.length - 1;
 // console.log(sectionTriggerPoints);
 
@@ -200,3 +153,21 @@ $(window).scroll(function () {
 //     }
 //     )
 // }
+
+// Defining event listener function
+
+function displayWindowSize() {
+    sectionTopTop = sectionTop.offset().top;
+    section1Top = section1.offset().top;
+    section2Top = section2.offset().top;
+    section3Top = section3.offset().top;
+    section4Top = section4.offset().top;
+    // sticky = navbar.offsetTop;
+    // vh_value = document.clientHeight;
+    // var w = document.documentElement.clientWidth;
+    // var h = document.documentElement.clientHeight;
+    // document.getElementById("result").innerHTML = "Width: " + w + ", " + "Height: " + h + ", 1:" + section1Top + ", 2:" + section2Top + ", 3:" + section3Top;
+}
+
+window.addEventListener("resize", displayWindowSize);
+displayWindowSize();
