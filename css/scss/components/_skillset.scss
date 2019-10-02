@@ -1,0 +1,16 @@
+.skillset {
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    color: #c8ccd1;    
+}
+
+.skillContainer {
+    display: flex;
+    .skillTitle {
+        width: 10vw;
+        text-align: right;
+    }
+    .skillLevel {
+        padding-left: 1vw;
+    }
+}
