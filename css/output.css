@@ -1,3 +1,7 @@
+@font-face {
+  src: url(../../fonts/msyi.ttf);
+  font-family: msyi;
+}
 .header img {
   opacity: 0.7;
   min-width: 100%;
@@ -26,11 +30,11 @@
   transition: opacity 0.15s ease;
 }
 #section0Btn:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .section-odd {
-  min-height: 0vh;
+  min-height: 100vh;
   background-color: #222;
   color: #C8CCD1;
 }
@@ -69,7 +73,13 @@
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Microsoft Yi Baiti";
+  font-family: "msyi";
+}
+
+#section1 {
+  margin-top: 0px;
+  padding: 0px;
+  background-color: black;
 }
 
 .hover-underline-menu {
@@ -84,12 +94,15 @@ h1, h2, h3, h4, h5 {
   right: 0px;
   width: 9vw;
   height: 100vh;
-  background-color: rgba(133, 133, 133, 0.5);
+  background-color: rgba(58, 58, 58, 0.5);
   box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .hover-underline-menu .menu a {
   color: #FFFFFF;
   font-size: 3vw;
+}
+.hover-underline-menu .menu a h5 {
+  font-size: 1.2vw;
 }
 
 .underline-from-center {
@@ -132,7 +145,7 @@ h1, h2, h3, h4, h5 {
 .activeTab {
   transition: color 0.15s ease;
   background-color: rgba(84, 177, 201, 0.8);
-  box-shadow: -5px 0px 60px rgba(84, 178, 201, 0.5);
+  box-shadow: -5px 0px 40px rgba(84, 178, 201, 0.5);
 }
 
 .target-transistionable a {
@@ -296,18 +309,17 @@ h1, h2, h3, h4, h5 {
   content: "";
 }
 
-#aboutme {
+.aboutme {
   background-color: white;
   color: #535353;
 }
 
-#aboutme-imagecolumn {
+.aboutme-image-column {
   padding-bottom: 0px;
 }
 
-#section1 {
-  margin-top: 200px;
-  padding: 20px;
+.aboutme-text-column {
+  margin-top: 12vh;
 }
 
 .imgme {
@@ -325,6 +337,23 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0px;
   width: 570px;
   height: auto;
+}
+
+.skillset {
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  color: #c8ccd1;
+}
+
+.skillContainer {
+  display: flex;
+}
+.skillContainer .skillTitle {
+  width: 10vw;
+  text-align: right;
+}
+.skillContainer .skillLevel {
+  padding-left: 1vw;
 }
 
 /*# sourceMappingURL=output.css.map */
