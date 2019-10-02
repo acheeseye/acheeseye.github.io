@@ -30,6 +30,16 @@ https://blog.hubspot.com/marketing/best-personal-websites
 
 - font previewer: https://wordmark.it/
 
+https://fonts.google.com/?selection.family=Big+Shoulders+Text|Open+Sans+Condensed:300|Quicksand|Raleway
+
 - font icons: https://fontawesome.com/
 
 - scroll related: https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
+
+https://codepen.io/joxmar/pen/NqqMEg
+
+- button contrast checker: https://www.aditus.io/button-contrast-checker/
+
+- reflective property: https://www.codesdope.com/blog/article/add-impressive-reflection-effects-using-only-css/
+
+- recaptcha: https://www.google.com/recaptcha/admin/create
