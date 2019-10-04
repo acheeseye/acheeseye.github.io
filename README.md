@@ -49,3 +49,13 @@ https://codepen.io/joxmar/pen/NqqMEg
 - linear gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
 
 - email obfuscator: http://www.jottings.com/obfuscator/
+
+- screen sizes to consider: https://www.hobo-web.co.uk/best-screen-size/
+
+- browserify: https://www.youtube.com/watch?v=CTAa8IcQh1U
+
+https://github.com/browserify/browserify
+
+- npm: https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/
+
+- body-scroll-lock: https://www.npmjs.com/package/body-scroll-lock
