@@ -47,3 +47,5 @@ https://codepen.io/joxmar/pen/NqqMEg
 - responsive: https://developers.google.com/web/fundamentals/design-and-ux/responsive
 
 - linear gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
+
+- email obfuscator: http://www.jottings.com/obfuscator/
