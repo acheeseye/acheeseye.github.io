@@ -5,11 +5,10 @@
     src: url(../../fonts/msyi.ttf);
     font-family: msyi;
   }
-  
 
 .header {
     img {
-        opacity: 0.7;
+        opacity: 1;
         min-width: 100%;
         height: 100vh;
     }
@@ -20,6 +19,10 @@
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        font-size: 4vw;
+    }
     img {
         opacity: 1;
         width: 100%;
@@ -28,15 +31,16 @@
 }
 
 #arrowdown.centered {
-    top: 90%;
+    top: 80%;
+    color: black;
 }
 
 #section0Btn {
     font-size: 10vw;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: opacity 0.15s ease;
     &:hover {
-        opacity: 0.9;
+        opacity: 1;
     }
 }
 .section-odd {
@@ -90,3 +94,4 @@ h1, h2, h3, h4, h5 {
     padding: 0px;
     background-color: black;
 }
+
