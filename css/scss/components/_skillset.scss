@@ -1,16 +1,87 @@
+@import '../functions';
+
+$level4: rgb(165, 172, 133);
+$level4tint: tint($level4, 15);
+$level4shade: shade($level4, 50);
+$level3: rgb(123, 170, 138);
+$level3tint: tint($level3, 15);
+$level3shade: shade($level3, 50);
+$level2: rgb(79, 177, 160);
+$level2tint: tint($level2, 15);
+$level2shade: shade($level2, 50);
+$level1: #0371A0;
+$level1tint: tint($level1, 15);
+$level1shade: shade($level1, 50);
+
+$box-shadow-offset-x: 7px;
+$box-shadow-offset-y: 7px;
+
 .skillset {
     min-height: 100vh;
     background-color: #0f0f0f;
-    color: #c8ccd1;    
-}
+    color: white;    
+    .skillContainer {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+        display: flex;
+        border-radius: 25px;
+        align-items: center;
 
-.skillContainer {
-    display: flex;
-    .skillTitle {
-        width: 10vw;
-        text-align: right;
-    }
-    .skillLevel {
-        padding-left: 1vw;
+        &#level1 {
+            box-shadow: $box-shadow-offset-x $box-shadow-offset-y $level4shade;
+            background-color: $level4;
+            background-image: linear-gradient(45deg, $level4 3%, $level4tint 10%, $level4 10%);
+            margin-top: 0vh;
+        }
+        &#level2 {
+            box-shadow: $box-shadow-offset-x $box-shadow-offset-y $level3shade;
+            background-color: $level3;
+            background-image: linear-gradient(45deg, $level3 3%, $level3tint 10%, $level3 10%);
+        }
+        &#level3 {
+            box-shadow: $box-shadow-offset-x $box-shadow-offset-y $level2shade;
+            background-color: $level2;
+            background-image: linear-gradient(45deg, $level2 3%, $level2tint 10%, $level2 10%);
+        }
+        &#level4 {
+            box-shadow: $box-shadow-offset-x $box-shadow-offset-y $level1shade;
+            background-color: $level1;
+            background-image: linear-gradient(45deg, $level1 3%, $level1tint 10%, $level1 10%);
+        }
+
+        // border-style: solid;
+        // border-width: 10px;
+        // border-bottom-left-radius: 0px;
+        // border-top-left-radius: 25px;
+        // border-bottom-right-radius: 25px;
+        // height: 15vh;
+        .skillTitle {
+            align-items: center;
+            // background-color: rgba(0, 0, 0, 0.2);
+            background-image: linear-gradient(to right, rgba(0,0,0,0.3) 1%, rgba(0,0,0,0.2) 3%, rgba(0,0,0,0.2) 97%, rgba(0,0,0,0.3) 99%);
+            border-radius: 25px;
+            // border-top-left-radius: 0px;
+            // border-bottom-left-radius: 0px;
+            margin: 1vw;
+            margin-left: 0vw;
+            display: inline-block;
+            width: 70%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0.75vw;
+            // text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+            span {
+                height: inherit;
+                // display: table-cell;
+            }
+        }
+        .skillLevel {
+            width: 30%;
+            // padding: 1vw;
+            font-size: 2.5vw;
+            text-align: center;
+        }
     }
 }
