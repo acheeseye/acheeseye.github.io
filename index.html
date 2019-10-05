@@ -10,26 +10,26 @@
 
     <!-- foundation CDN reference -->
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+
     <!-- personal css reference -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Open+Sans+Condensed:300|Quicksand|Raleway&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Manjari:100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/output.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
-    <script src="https://kit.fontawesome.com/689e78e575.js" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 </head>
 
 <body>
-    <div id="trigger2"></div>
+    <div id="shadowTrigger"></div>
     <div class="header" id="sectionTop">
         <img src="images/IMG_3692.PNG" style="image-orientation: from-image;" />
+        <div class="endingCode" style="top: 20vh;">
+            <h1 class="line-1 anim-typewriter2">&ltpersonal-website&gt</h1>
+        </div>
         <div class="centered">
-            <img src="images/titlepage.png">
+            <img src="images/jasonhsi.png">
         </div>
         <div class="centered" id="arrowdown">
             <i class="fas fa-angle-down" id="section0Btn"></i>
@@ -50,7 +50,7 @@
                     </div>
                 </li>
                 <li><a class="underline-from-center activeTab" id="section1Btn">
-                        <i class="fas fa-address-card"></i>
+                        <i class="far fa-id-card"></i>
                         <h5>About Me</h5>
                     </a></li>
                 <li><a class="underline-from-center" id="section2Btn">
@@ -63,26 +63,22 @@
                     </a></li>
                 <li><a class="underline-from-center" id="section4Btn">
                         <i class="fas fa-tools"></i>
-                        <h5>Skillset</h5>
+                        <h5>Skill Set</h5>
                     </a></li>
                 <li>
-                    <div class="get-in-touch-icons">
-                        <a href="mailto: jznhsi@gmail.com">
-                            <i class="fi-mail"></i>
-                        </a>
+                    <div class="get-in-touch-icons" id="injectionToken0">
                         <a href="https://github.com/acheeseye" target="_blank">
                             <i class="fi-social-github"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/jason-hsi/" target="_blank">
                             <i class="fi-social-linkedin"></i>
                         </a>
+                    </div>
                 </li>
+                </li>
+            </ul>
+        </nav>
     </div>
-    </li>
-    </ul>
-    </nav>
-    </div>
-    <div id="result"></div>
     <div class="content">
         <div id="section1"></div>
         <div class="section-odd aboutme">
@@ -111,7 +107,8 @@
                             <div class="spacer0"></div>
                             <div class="staggeredRevealContent">
                                 <h4>
-                                    Passionate about solution creation and adaptation.
+                                    Passionate about solution creation and adaptation. <br> Driven by the potential to
+                                    coalesce aesthetics and utility.
                                 </h4>
                             </div>
                             <div class="spacer0"></div>
@@ -123,8 +120,11 @@
                             </div>
                             <div class="staggeredRevealContent">
                                 <h4>
-                                    Designer by heart // Programmer by choice
+                                    Designer by heart // Programmer by choice <br><br>
                                 </h4>
+                            </div>
+                            <div class="staggeredRevealContent">
+                                <a data-open="resumeModal" id="resumeModalLink">View Resume</a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
         </div>
         <div id="section2"></div>
         <div class="section-even">
-            <div class="spacer1"></div>
+            <div class="spacer0"></div>
             <div class="row">
                 <div class="large-12 column text-left staggeredRevealContent">
                     <h1>What I've Done</h1>
@@ -238,7 +238,7 @@
         </div>
         <div id="section3"></div>
         <div class="section-odd">
-            <div class="spacer1"></div>
+            <div class="spacer0"></div>
             <div class="row column text-left">
                 <h1 class="staggeredRevealContent">Art Design</h1>
                 <div class="spacer0"></div>
@@ -291,43 +291,98 @@
                     </div>
                 </div>
             </div>
-            <div class="spacer1"></div>
+            <div class="0"></div>
         </div>
+
         <div id="section4"></div>
         <div class="skillset">
-            <div class="spacer1"></div>
+            <div class="spacer0"></div>
             <div class="row text-left staggeredRevealContent">
-                <h1>Skillset</h1>
+                <h1>Skill Set</h1>
             </div>
             <div class="row">
+                <div class="skillContainer staggeredRevealContent" id="level4">
+                    <span class="skillLevel"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    <span class="skillTitle">
+                        <span>
+                            <h4>
 
-                <div class="skillContainer">
-                    <span class="skillTitle">C++</span>
-                    <span class="skillLevel"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                C++, HTML, CSS, Agile Methodologies
+                            </h4>
+                        </span>
+                    </span>
                 </div>
-                <div class="skillContainer">
-                    <span class="skillTitle">C++</span>
+                <div class="skillContainer staggeredRevealContent" id="level3">
+                    <span class="skillLevel"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="far fa-star"></i></span>
+                    <span class="skillTitle">
+                        <h4>
+
+                            C, C#, SQL, JavaScript, UI, UX, GitHub
+                        </h4>
+                    </span>
+                </div>
+
+                <div class="skillContainer staggeredRevealContent" id="level2">
                     <span class="skillLevel"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            class="far fa-star"></i><i class="far fa-star"></i></span>
+                    <span class="skillTitle">
+                        <h4>
+                            TypeScript, Python, x86 Assembly, SFML, OpenSCAD, Java
+                        </h4>
+                    </span>
+                </div>
+                <div class="skillContainer staggeredRevealContent" id="level1">
+                    <span class="skillLevel"><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                            class="far fa-star"></i><i class="far fa-star"></i></span>
+                    <span class="skillTitle">
+                        <h4>
+                            R, VHDL, Lua, Haskell, Scheme, Prolog, Fortran
+                        </h4>
+                    </span>
                 </div>
             </div>
+            <div class="endingCode typingAnimTrigger">
+                <h1 class="transparent">&lt/personal-website&gt</h1>
+            </div>
+
         </div>
     </div>
     <!-- jQuery google CDN reference -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="js/file.js"></script>
-    <script type="text/javascript" src="js/google-charts.js"></script>
-    <!-- <script type="text/javascript" src="js/active-tab.js"></script> -->
-    <!-- <script type="text/javascript" src="js/staggered-reveal.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.min.js"></script>
 </body>
+
+<div id="resumeModal" class="reveal" data-reveal>
+    <img src="images/JasonHsiResume.png">
+    <a href="JasonHsiResume.pdf" download id="resumeDownload">
+        <h5>JasonHsiResume.pdf <i class="fas fa-download"></i>
+        </h5>
+    </a>
+    <!-- <a class="close-reveal" aria-label="Close" data-close>&#215;</a> -->
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="bundle.js"></script>
+<script type="text/javascript" src="js/google-charts.js"></script>
+<!-- <script type="text/javascript" src="js/active-tab.js"></script> -->
+<!-- <script type="text/javascript" src="js/staggered-reveal.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.reveal.min.js"></script>
+<script type="module" src="node_modules/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+<script src="https://kit.fontawesome.com/689e78e575.js" crossorigin="anonymous"></script>
+
 
 
 </html>
