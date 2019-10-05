@@ -17,6 +17,12 @@
       h5 {
         font-size: 1.2vw;
       }
+      &#resume-icon {
+        transition: opacity 0.15s ease;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
     }
     
   }
@@ -25,6 +31,9 @@
 
 .underline-from-center {
   position: relative;
+  background-color: transparent;
+  // transition: background-color 2s ease;
+  transition: background-color 0.5s ease, box-shadow 0.6s ease;
 
   &::after {
     content: "";
@@ -66,10 +75,14 @@
 }
 
 .activeTab {
-  transition: color 0.15s ease;
   background-color: rgba(84, 177, 201, 0.8);
   box-shadow: -5px 0px 40px rgba(84, 178, 201, 0.5);
-
+  // color: black;
+  .menu {
+    a {
+      color:black;
+    }
+  }
   // font-size: 10vw;
   // margin-top: 20px;
   // margin-bottom: 20px;
