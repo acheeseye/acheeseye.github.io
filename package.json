@@ -1,0 +1,33 @@
+{
+  "name": "jason-hsi-personal-website",
+  "version": "1.0.0",
+  "description": "A personal website built by Jason Hsi",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/file.js -o bundle.js",
+    "watch": "watchify js/file.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acheeseye/personal-website.git"
+  },
+  "keywords": [
+    "front-end",
+    "website",
+    "personal-website"
+  ],
+  "author": "Jason Hsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acheeseye/personal-website/issues"
+  },
+  "homepage": "https://github.com/acheeseye/personal-website#readme",
+  "dependencies": {
+    "body-scroll-lock": "^2.6.4"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "watchify": "^3.11.1"
+  }
+}
