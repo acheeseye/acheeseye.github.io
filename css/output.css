@@ -2,8 +2,12 @@
   src: url(../../fonts/msyi.ttf);
   font-family: msyi;
 }
+.noScroll {
+  overflow: hidden;
+}
+
 .header img {
-  opacity: 0.7;
+  opacity: 1;
   min-width: 100%;
   height: 100vh;
 }
@@ -13,6 +17,10 @@
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered h1 {
+  font-size: 4vw;
 }
 .centered img {
   opacity: 1;
@@ -21,16 +29,17 @@
 }
 
 #arrowdown.centered {
-  top: 90%;
+  top: 80%;
+  color: black;
 }
 
 #section0Btn {
   font-size: 10vw;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity 0.15s ease;
 }
 #section0Btn:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .section-odd {
@@ -104,9 +113,17 @@ h1, h2, h3, h4, h5 {
 .hover-underline-menu .menu a h5 {
   font-size: 1.2vw;
 }
+.hover-underline-menu .menu a#resume-icon {
+  transition: opacity 0.15s ease;
+}
+.hover-underline-menu .menu a#resume-icon:hover {
+  opacity: 0.5;
+}
 
 .underline-from-center {
   position: relative;
+  background-color: transparent;
+  transition: background-color 0.5s ease, box-shadow 0.6s ease;
 }
 .underline-from-center::after {
   content: "";
@@ -143,9 +160,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .activeTab {
-  transition: color 0.15s ease;
   background-color: rgba(84, 177, 201, 0.8);
   box-shadow: -5px 0px 40px rgba(84, 178, 201, 0.5);
+}
+.activeTab .menu a {
+  color: black;
 }
 
 .target-transistionable a {
@@ -339,21 +358,158 @@ h1, h2, h3, h4, h5 {
   height: auto;
 }
 
+#resumeModal {
+  border-width: 0px;
+  left: 50vw;
+  transform: translateX(-400px) translateY(-150px);
+  width: 800px;
+  height: auto;
+}
+
+#resumeDownload {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3rem;
+  color: white;
+  background-color: gray;
+  box-shadow: 5px 5px #cecece;
+  border-radius: 10px;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  transition: background-color 0.15s ease;
+}
+#resumeDownload:hover {
+  background-color: #62acbf;
+}
+
 .skillset {
   min-height: 100vh;
   background-color: #0f0f0f;
-  color: #c8ccd1;
+  color: white;
+}
+.skillset .skillContainer {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+}
+.skillset .skillContainer#level1 {
+  box-shadow: 7px 7px #535643;
+  background-color: #a5ac85;
+  background-image: linear-gradient(45deg, #a5ac85 3%, #b3b897 10%, #a5ac85 10%);
+  margin-top: 0vh;
+}
+.skillset .skillContainer#level2 {
+  box-shadow: 7px 7px #3e5545;
+  background-color: #7baa8a;
+  background-image: linear-gradient(45deg, #7baa8a 3%, #8fb79c 10%, #7baa8a 10%);
+}
+.skillset .skillContainer#level3 {
+  box-shadow: 7px 7px #285950;
+  background-color: #4fb1a0;
+  background-image: linear-gradient(45deg, #4fb1a0 3%, #69bdae 10%, #4fb1a0 10%);
+}
+.skillset .skillContainer#level4 {
+  box-shadow: 7px 7px #023950;
+  background-color: #0371A0;
+  background-image: linear-gradient(45deg, #0371A0 3%, #2986ae 10%, #0371A0 10%);
+}
+.skillset .skillContainer .skillTitle {
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.2) 97%, rgba(0, 0, 0, 0.3) 99%);
+  border-radius: 25px;
+  margin: 1vw;
+  margin-left: 0vw;
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.75vw;
+}
+.skillset .skillContainer .skillTitle span {
+  height: inherit;
+}
+.skillset .skillContainer .skillLevel {
+  width: 30%;
+  font-size: 2.5vw;
+  text-align: center;
 }
 
-.skillContainer {
-  display: flex;
+.endingCode {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
 }
-.skillContainer .skillTitle {
-  width: 10vw;
-  text-align: right;
+.endingCode h1 {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0vh;
+  font-size: 60px;
 }
-.skillContainer .skillLevel {
-  padding-left: 1vw;
+
+.transparent {
+  color: transparent;
+  background-color: transparent;
+}
+
+.anim-typewriter {
+  color: white;
+  position: relative;
+  top: 50%;
+  width: 684px;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  animation: typewriter 2s steps(19) 1s 1 normal both, blink-caret 1s step-end infinite;
+}
+
+/* Animation */
+.anim-typewriter2 {
+  position: relative;
+  top: 50%;
+  width: 684px;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  animation: typewriter2 2s steps(18) 1s 1 normal both, blink-caret 1s step-end infinite;
+}
+
+@keyframes typewriter2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 648px;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 684px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
