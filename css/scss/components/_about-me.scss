@@ -32,3 +32,37 @@
     width: 570px;
     height: auto;
 }
+
+$modal-width: 800px;
+$modal-width-half: $modal-width/2;
+// $modal-width-fourth: $modal-width/8;
+$modal-top: 150px;
+
+#resumeModal {
+    // background-color: rgba(0, 0, 0, 0.3);
+    border-width: 0px;
+    left: 50vw;
+    transform: translateX(-$modal-width-half) translateY(-$modal-top);
+    width: $modal-width;
+    height: auto;
+    // overflow-y: hidden;
+}
+
+#resumeDownload {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.3rem;
+    color: white;
+    background-color: gray;
+    box-shadow: 5px 5px rgb(206, 206, 206);
+    border-radius: 10px;
+    // font-size: 20px;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: #62acbf;
+    }
+}
