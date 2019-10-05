@@ -1,0 +1,64 @@
+.endingCode {
+    position: absolute;
+    // background-color: gray;
+    left: 50%;
+    transform: translateX(-50%);
+    // width: 684px;
+    overflow: hidden;
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 0vh;
+        font-size: 60px;
+    }
+}
+.transparent {
+    color:transparent;
+    background-color: transparent;
+}
+.anim-typewriter{
+    color:white;
+    position: relative;
+    top: 50%;  
+    width: 684px;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    // font-size: 180%;
+    // text-align: center;
+    white-space: nowrap;
+    // overflow: hidden;
+    // transform: translateY(-50%);    
+    animation: typewriter 2s steps(19) 1s 1 normal both,
+    blink-caret 1s step-end infinite,
+}
+/* Animation */
+.anim-typewriter2 {
+    position: relative;
+    top: 50%;  
+    width: 684px;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    // font-size: 180%;
+    // text-align: center;
+    white-space: nowrap;
+    // overflow: hidden;
+    // transform: translateY(-50%);    
+    animation: typewriter2 2s steps(18) 1s 1 normal both,
+               blink-caret 1s step-end infinite,
+  }
+@keyframes typewriter2 {
+      from{width: 0;}
+      to{width: 648px;}
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 684px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255);}
+  to{border-right-color: transparent;}
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
