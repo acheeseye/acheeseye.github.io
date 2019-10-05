@@ -2,10 +2,6 @@
   src: url(../../fonts/msyi.ttf);
   font-family: msyi;
 }
-.noScroll {
-  overflow: hidden;
-}
-
 .header img {
   opacity: 1;
   min-width: 100%;
