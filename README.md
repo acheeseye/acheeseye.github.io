@@ -59,3 +59,5 @@ https://github.com/browserify/browserify
 - npm: https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/
 
 - body-scroll-lock: https://www.npmjs.com/package/body-scroll-lock
+
+- typewriter: https://css-tricks.com/snippets/css/typewriter-effect/
