@@ -210,3 +210,16 @@ resumeModalLink.onclick = function () {
 
 
 })(jQuery, this);
+
+
+var galleryItems = document.getElementsByClassName("galleryItem");
+for (var i = 0; i < galleryItems.length; ++i) {
+    galleryItems[i].onclick = function () {
+        var currentActiveGalleryItem = document.getElementsByClassName("activeGalleryItem");
+        currentActiveGalleryItem[0].className = currentActiveGalleryItem[0].className.replace(" activeGalleryItem", "");
+        this.className += " activeGalleryItem";
+
+        var showcaseElement = document.getElementById("showcase");
+        showcaseElement.innerHTML = '<img src="' + this.src + '">';
+    };
+}
