@@ -22,6 +22,12 @@ tweening with trigger elements
 basic npm set up and install of body-scroll-lock (used browserify to allow require keyword and watchify to watch file.js)
 working modals
 flexbox experience
+worked with exif orientation for images uploaded from phone
+created a click and expand gallery
+recalculation section destinations upon screen resize
+email obfuscator
+javascript `activeItem` concept
+modal usage and file download
 
 sass import seems to ignore starting '_' character and ending .scss extention (usable without the mentioned)
 
