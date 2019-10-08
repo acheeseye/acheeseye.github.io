@@ -124,7 +124,7 @@ var sectionTriggerPoints = [section1Top - sectionTriggerOffset, section2Top - se
 var lastTriggerPointIndex = sectionTriggerPoints.length - 1;
 // console.log(sectionTriggerPoints);
 
-$(window).onscroll(function () {
+$(window).scroll(function () {
     var fromTop = $(this).scrollTop(); // window's scroll position
     // console.log(fromTop);
     // console.log("menuItems: " + menuItems.length);
