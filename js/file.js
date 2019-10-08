@@ -223,3 +223,7 @@ for (var i = 0; i < galleryItems.length; ++i) {
         showcaseElement.innerHTML = '<img src="' + this.src + '">';
     };
 }
+
+window.addEventListener("load", function () {
+    alert("all loaded");
+});
