@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5 {
 }
 .hover-underline-menu .menu a h5 {
   font-size: 1.2vw;
+  padding-top: 0.5vw;
 }
 .hover-underline-menu .menu a#resume-icon {
   transition: opacity 0.15s ease;
@@ -156,8 +157,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .activeTab {
-  background-color: rgba(84, 177, 201, 0.8);
-  box-shadow: -5px 0px 40px rgba(84, 178, 201, 0.5);
+  background-color: #2986ae;
+  box-shadow: 0px 0px 40px rgba(3, 113, 160, 0.4);
 }
 .activeTab .menu a {
   color: black;
@@ -293,9 +294,9 @@ h1, h2, h3, h4, h5 {
   border-bottom-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
-  flex-direction: column;
+  flex-direction: row;
   align-content: space-between;
-  padding: 30px;
+  width: 100%;
 }
 .interest:last-child {
   border-right-width: 0px;
@@ -307,21 +308,50 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   align-content: center;
 }
+.interest .showcase {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15vh;
+  image-orientation: from-image;
+}
+.interest .showcase img {
+  height: 40vh;
+}
 .interest .interestImages {
   display: flex;
-  flex-flow: row wrap;
-  width: 18vw;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 60vw;
+  height: 5vw;
 }
 .interest .interestImages img {
-  width: 9vw;
-  height: 9vw;
-  padding: 1vw;
-  background-size: cover;
+  opacity: 0.2;
+  padding-top: 1.5vw;
+  image-orientation: from-image;
+  overflow-x: hidden;
+  width: 6vw;
   transition: all 0.25s ease;
 }
 .interest .interestImages img:hover {
-  opacity: 0.5;
+  transform: translateY(-1vw);
+  opacity: 1;
   content: "";
+  cursor: pointer;
+}
+.interest .interestImages .activeGalleryItem {
+  transform: translateY(-1vw);
+  opacity: 1;
+}
+.interest .transparentEffect {
+  display: flex;
+  width: 60vw;
+  position: absolute;
+  height: 1.5vw;
+  background-image: linear-gradient(to bottom, transparent, #222222);
+  transform: translateY(-100%);
 }
 
 .aboutme {
@@ -334,7 +364,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .aboutme-text-column {
-  margin-top: 12vh;
+  margin-top: 10vh;
 }
 
 .imgme {
@@ -425,10 +455,10 @@ h1, h2, h3, h4, h5 {
   width: 70%;
   text-align: center;
   vertical-align: middle;
-  padding: 0.75vw;
+  padding: 1vw;
 }
-.skillset .skillContainer .skillTitle span {
-  height: inherit;
+.skillset .skillContainer .skillTitle h4 {
+  margin: 0;
 }
 .skillset .skillContainer .skillLevel {
   width: 30%;
