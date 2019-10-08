@@ -36,22 +36,22 @@ var half_spacer = 40,
 
 
 section0Btn.onclick = function () {
-    // TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
 }
 sectionTopBtn.onclick = function () {
-    // TweenMax.to(window, scrollToDuration, { scrollTo: sectionTopTop, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: sectionTopTop, ease: Expo.easeOut });
 }
 section1Btn.onclick = function () {
-    // TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section1Top, ease: Expo.easeOut });
 }
 section2Btn.onclick = function () {
-    // TweenMax.to(window, scrollToDuration, { scrollTo: section2Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section2Top, ease: Expo.easeOut });
 }
 section3Btn.onclick = function () {
-    // TweenMax.to(window, scrollToDuration, { scrollTo: section3Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section3Top, ease: Expo.easeOut });
 }
 section4Btn.onclick = function () {
-    // TweenMax.to(window, scrollToDuration, { scrollTo: section4Top, ease: Expo.easeOut });
+    TweenMax.to(window, scrollToDuration, { scrollTo: section4Top, ease: Expo.easeOut });
 }
 
 // sticky navbar
