@@ -223,8 +223,10 @@ for (var i = 0; i < galleryItems.length; ++i) {
         showcaseElement.innerHTML = '<img src="' + this.src + '">';
     };
 }
-
+const loader = document.getElementById("loader");
+disableBodyScroll(loader);
 window.addEventListener("load", function () {
-    var loader = document.getElementById("white-bg");
-    loader.className += " anim-typewriter2-onload";
+    var whitebg = document.getElementById("white-bg");
+    whitebg.className += " anim-typewriter2-onload";
+    enableBodyScroll(loader);
 });
