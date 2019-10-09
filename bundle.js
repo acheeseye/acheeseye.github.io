@@ -153,7 +153,7 @@ $(window).scroll(function () {
 
 // Defining event listener function
 
-function displayWindowSize() {
+function recalculateSectionTops() {
     sectionTopTop = sectionTop.offset().top;
     section1Top = section1.offset().top;
     section2Top = section2.offset().top;
@@ -166,8 +166,8 @@ function displayWindowSize() {
     // document.getElementById("result").innerHTML = "Width: " + w + ", " + "Height: " + h + ", 1:" + section1Top + ", 2:" + section2Top + ", 3:" + section3Top;
 }
 
-window.addEventListener("resize", displayWindowSize);
-displayWindowSize();
+window.addEventListener("resize", recalculateSectionTops);
+recalculateSectionTops();
 
 
 // Email obfuscator script 2.1 by Tim Williams, University of Arizona
