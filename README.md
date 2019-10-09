@@ -63,3 +63,7 @@ https://github.com/browserify/browserify
 - typewriter: https://css-tricks.com/snippets/css/typewriter-effect/
 
 - loading page: https://www.youtube.com/watch?v=xuA83OYTE7I
+
+- debounce and throttling: https://css-tricks.com/debouncing-throttling-explained-examples/
+
+- overlay scrollbar: https://kingsora.github.io/OverlayScrollbars/#!overview
