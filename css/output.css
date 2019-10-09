@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   background-color: #0f0f0f;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
 .hover-underline-menu {
@@ -418,7 +418,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .skillset {
-  min-height: 100vh;
   background-color: #0f0f0f;
   color: white;
 }
