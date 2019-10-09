@@ -63,3 +63,17 @@
         border-bottom-width: 0;
     }
 }
+
+#thiswebsite {
+    a {
+        i {
+            font-size: 0.9em;
+        }
+        color: #0092d1;
+        transition: color 0.25s ease;
+        &:hover {
+            // cursor: pointer;
+            color: #7dd8ff;
+        }
+    }
+}

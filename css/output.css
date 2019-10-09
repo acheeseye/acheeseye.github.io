@@ -287,6 +287,17 @@ h1, h2, h3, h4, h5 {
   border-bottom-width: 0;
 }
 
+#thiswebsite a {
+  color: #0092d1;
+  transition: color 0.25s ease;
+}
+#thiswebsite a i {
+  font-size: 0.9em;
+}
+#thiswebsite a:hover {
+  color: #7dd8ff;
+}
+
 .interestContainer {
   display: flex;
   flex-direction: row;
@@ -318,6 +329,7 @@ h1, h2, h3, h4, h5 {
 .interest .showcase {
   display: flex;
   justify-content: center;
+  margin-top: 5vh;
   margin-bottom: 15vh;
   image-orientation: from-image;
 }
