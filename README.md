@@ -61,3 +61,5 @@ https://github.com/browserify/browserify
 - body-scroll-lock: https://www.npmjs.com/package/body-scroll-lock
 
 - typewriter: https://css-tricks.com/snippets/css/typewriter-effect/
+
+- loading page: https://www.youtube.com/watch?v=xuA83OYTE7I
