@@ -225,5 +225,6 @@ for (var i = 0; i < galleryItems.length; ++i) {
 }
 
 window.addEventListener("load", function () {
-    alert("all loaded");
+    var loader = document.getElementById("white-bg");
+    loader.className += " anim-typewriter2-onload";
 });
