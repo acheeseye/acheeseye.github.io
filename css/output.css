@@ -8,6 +8,10 @@
   height: 100vh;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: "Yantramanav", sans-serif;
+}
+
 .centered {
   position: absolute;
   left: 50%;
@@ -17,7 +21,7 @@
 }
 .centered h1 {
   font-size: 4vw;
-  font-family: 'Courier New', Courier, monospace
+  font-family: "Courier New", Courier, monospace;
 }
 .centered img {
   opacity: 1;
@@ -76,10 +80,6 @@
 #section4.text-center {
   padding-top: 30vh;
   padding-bottom: 30vh;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "Yantramanav", sans-serif;
 }
 
 #section1 {
