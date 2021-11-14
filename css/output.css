@@ -17,6 +17,7 @@
 }
 .centered h1 {
   font-size: 4vw;
+  font-family: 'Courier New', Courier, monospace
 }
 .centered img {
   opacity: 1;
@@ -374,7 +375,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .aboutme {
-  background-color: white;
+  background-color: #c8c8c8;
   color: #535353;
 }
 
